@@ -9,14 +9,19 @@
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
-  <?php echo css('assets/css/main.css') ?>
+  <?php echo css(array(
+		'https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.1/mapbox-gl.css',
+		'assets/css/perfect-scrollbar.css',
+		'assets/css/main.css'	
+	) ) ?>
+  
+  <?php echo js( array(
+    'assets/js/jquery-1.11.3.min.js', 
+    'https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.1/mapbox-gl.js',
+    'assets/js/perfect-scrollbar.jquery.min.js',
+    'assets/js/script.js'
+  ) ); ?>
 
 </head>
-<body>
-
-  <header class="header cf" role="banner">
-    <a class="logo" href="<?php echo url() ?>">
-      <img src="<?php echo url('assets/images/logo.svg') ?>" alt="<?php echo $site->title()->html() ?>" />
-    </a>
-    <?php snippet('menu') ?>
-  </header>
+<body class="page-<?= $page->uid() ?> template-<?= $page->intendedTemplate() ?> cf">
+	

@@ -28,3 +28,64 @@ make Kirby work. For more fine-grained configuration
 of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
+
+c::set('markdown.extra', true);
+
+c::set('roles', array(
+  array(
+    'id'      => 'admin',
+    'name'    => 'Admin',
+    'default' => true,
+    'panel'   => true
+  ),
+  array(
+    'id'      => 'editor',
+    'name'    => 'Editor',
+    'panel'   => true
+  ),
+  array(
+    'id'      => 'membre',
+    'name'    => 'Membre',
+    'panel'   => true
+  )
+));
+
+
+/*
+
+---------------------------------------
+Site functions
+---------------------------------------
+
+*/
+
+function id2title($id) {
+	$id = str_replace('activite-', '', $id); 
+	switch ($id) {
+		case 'diffusion':
+			return 'Lieux de diffusion';
+			break;
+		case 'residence':
+			return 'Lieux de résidence';
+			break;
+		case 'chapiteau':
+			return 'Espaces chapiteau';
+			break;
+		case 'polenationnal':
+			return 'Pôles nationnaux';
+			break;
+		case 'festival':
+			return 'Festivals';
+			break;
+		case 'formation':
+			return 'Formations professionnelles';
+			break;
+		case 'all':
+			return 'Tous les membres';
+			break;
+		default:
+			return id;
+			break;
+	}
+	return false;
+}
