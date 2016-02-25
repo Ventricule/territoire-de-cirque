@@ -1,0 +1,104 @@
+H1: 
+
+----
+
+Nom: 
+
+----
+
+Complement: Pôle national des arts du cirque
+
+----
+
+Logo: 990-logo-circa-pole-national-arts-cirque.jpg
+
+----
+
+Presentation: 
+
+CIRCa met en oeuvre : 
+- Une saison culturelle pluridisciplinaire à Auch 
+- Les Nomades de CIRCa, résidences d’artistes de cirque et partenariats avec les acteurs locaux, sous un chapiteau itinérant dans le département du Gers 
+- Le soutien à la création avec l’accueil de compagnies en résidence 
+-  De nombreuses actions culturelles et d’éducation artistiques avec tous les publics 
+-  Le Festival du cirque actuel, principal rendez-vous en France d’un cirque renouvelé, qui dépasse les limites du Gers et de Midi-Pyrénées, faisant de ce territoire une véritable terre de cirque. 
+- La gestion de la cant’auch un restaurant d’insertion pour un projet social, solidaire et culinaire  
+
+Grâce aux soutiens de l’Etat, de la Ville d’Auch, du Grand Auch Agglomération, du Département du Gers et de la Région Midi-Pyrénées, CIRCa s’est doté en 2012 d’un équipement adapté aux techniques de cirque : le Centre d’Innovation et de Recherche Circassien (CIRC).
+
+----
+
+Activites: diffusion, residence, chapiteau, polenationnal, festival, formation
+
+----
+
+Date-creation: 1988
+
+----
+
+Date-tdc: 2000
+
+----
+
+H2: 
+
+----
+
+Contacts: 
+
+- 
+  nom: Marc Fouilland
+  qualite: directeur
+  email: info@circa.auch.fr
+  numero: 05 62 61 65 00
+
+----
+
+Site: 
+
+----
+
+Facebook: 
+
+----
+
+H3: 
+
+----
+
+Location: 43.6521869,0.5932087999999567
+
+----
+
+Ville: Auch
+
+----
+
+Departement: 32
+
+----
+
+Adresse: 
+
+Allée des Arts
+32000, Auch - France
+
+----
+
+Title: CIRCa
+
+----
+
+Website: http://www.circa.auch.fr/
+
+----
+
+Numero: 05 62 61 65 00
+
+----
+
+H4: 01pol85.jpg,4338968_7_efd1_ill-4338968-4214-rtr3c1di_581cd2e83ea4f79bb7f885a0a9445139.jpg,holdsworth_5_905.jpg
+
+----
+
+Gallery: piste-de-tricycle-radim-pesko-informal-meeting-bedford-press.jpg,charles-pennequin-numerisation00142.jpg,4338968_7_efd1_ill-4338968-4214-rtr3c1di_581cd2e83ea4f79bb7f885a0a9445139.jpg,404.png,holdsworth_5_905.jpg,01pol85.jpg

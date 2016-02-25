@@ -1,0 +1,9 @@
+title: Actualités
+pages: 
+	template: actualite
+	num: date
+files: false
+fields: 
+	title:
+		label: Titre
+		type: text

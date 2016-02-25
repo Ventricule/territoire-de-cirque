@@ -1,0 +1,35 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Article
+pages: false
+files:
+	sortable: true
+	fields:
+		caption:
+			label: Légende
+			type: textarea
+fields:
+	title:
+		label: Titre
+		type:  text
+		width: 3/4
+	date:
+		label: Publication
+		type: date
+		default: today
+		width: 1/4
+	author:
+		label: Auteur
+		type: tags
+		width: 1/2
+	member:
+		label: Membre
+		type: tags
+		width: 1/2
+	introduction:
+		label: Introduction
+		type: textarea
+		buttons: false
+	text:
+		label: Texte
+		type: textarea

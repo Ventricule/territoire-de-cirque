@@ -1,0 +1,78 @@
+# site/blueprints/users/admin.yml
+fields: 
+	h1:
+		label: Présentation
+		type: headline
+	nom:
+		label: Nom de la structure
+		type: text
+	complement:
+		label: Complément du nom
+		type: text
+	logo:
+		label: Logo
+		type: select
+		options: images
+	presentation: 
+    label: Texte de présentation
+    type: textarea
+	activites: 
+		label: Activités
+		type: checkboxes
+		options:
+			diffusion: Lieu de diffusion
+			residence: Lieu de résidence
+			chapiteau: Espace chapiteau
+			polenationnal: Pôle nationnal
+			festival: Festival
+			formation: Formation professionnelle
+	date_creation:
+		label: Année de création de la structure
+		type: text
+		width: 1/2
+	date_tdc:
+		label: Membre de Territoires de cirque depuis l'année
+		type: text
+		width: 1/2
+	h2:
+		label: Contact
+		type: headline
+	contacts:
+		label: Contacts
+		type: structure
+		fields:
+			nom:
+				label: Nom
+				type: text
+			qualite:
+				label: Qualité
+				type: text
+			email:
+				label: Email
+				type: email
+	site:
+		label: Site internet
+		type: url
+		width: 1/2
+	facebook:
+		label: Facebook
+		type: url
+		width: 1/2
+	h3:
+		label: Géographie
+		type: headline
+	location:
+		label: Localisation
+		type: geolocation
+	ville:
+		label: Ville
+		type: text
+		width: 2/3
+	departement:
+		label: Numéro du département
+		type: text
+		width: 1/3
+	adresse:
+		label: Adresse
+		type: textarea
+		buttons: 

@@ -1,0 +1,15 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Dossier
+pages:
+	template:
+		- file
+		- folder
+files: false
+fields:
+  title:
+    label: Nom
+    type:  text
+	description:
+		label: Description
+		type: text

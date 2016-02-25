@@ -1,0 +1,100 @@
+title: Membre
+pages: false
+files: 
+  sortable: true
+	fields:
+		caption:
+			label: Légende
+			type: textarea
+fields: 
+	h1:
+		label: Présentation
+		type: tabs
+	title:
+		label: Nom de la structure
+		type: text
+	complement:
+		label: Complément du nom
+		type: text
+	logo:
+		label: Logo
+		type: image
+		width: 1/2
+	date_creation:
+		label: Année de naissance
+		type: text
+		width: 1/4
+	date_tdc:
+		label: Membre depuis l'année
+		type: text
+		width: 1/4
+	activites: 
+		label: Activités
+		type: checkboxes
+		columns: 3
+		options:
+			diffusion: Lieu de diffusion
+			residence: Lieu de résidence
+			chapiteau: Espace chapiteau
+			polenationnal: Pôle nationnal
+			festival: Festival
+			formation: Formation professionnelle
+	presentation: 
+    label: Texte de présentation
+    type: textarea
+	h2:
+		label: Contact
+		type: tabs
+	contacts:
+		label: Contacts
+		type: structure
+		style: table
+		fields:
+			nom:
+				label: Nom
+				type: text
+			qualite:
+				label: Qualité
+				type: text
+			email:
+				label: Email
+				type: email
+			numero:
+				label: Numéro de téléphone
+				type: tel
+	website:
+		label: Site internet
+		type: url
+		width: 1/2
+	facebook:
+		label: Facebook
+		type: url
+		width: 1/2
+	h3:
+		label: Géographie
+		type: tabs
+	location:
+		label: Localisation
+		type: geolocation
+	ville:
+		label: Ville
+		type: text
+		width: 2/3
+	departement:
+		label: Numéro du département
+		type: text
+		width: 1/3
+	adresse:
+		label: Adresse
+		type: textarea
+		buttons: false
+	h4:
+		label: Belles images
+		type: tabs
+	gallery:
+		label: Galerie
+		type: selector
+		mode: multiple
+		sort: sort
+		types:
+			- image
