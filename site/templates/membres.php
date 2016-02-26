@@ -10,7 +10,6 @@
 	
 	
 	<div id="liste-membres">
-		<h2>Liste</h2>
 		<ul class="cf">
 
 			<?php
@@ -37,7 +36,7 @@
 				);
 				?>
 
-				<li data-uid='<?= $membre->uid() ?>'>
+				<li data-uid='<?= $membre->uid() ?>' data-activites="<?= $membre->activites() ?>">
 					<a href="<?= $membre->url()?>">
 						<figure><img src='<?= $logo->url() ?>' width='<?= $logo->width() ?>' height='<?= $logo->height() ?>'/></figure>
 						<h2><?= $membre->title() ?></h2>

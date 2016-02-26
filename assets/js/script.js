@@ -103,14 +103,26 @@ $(document).ready( function () {
 						if(e.target.checked) {
 							if (id == 'all') {
 								map.setFilter("markers", ['any','all']);
+								listSetFilter('all');
 							} else {
 								map.setFilter("markers", ['==', id, true]);
+								listSetFilter(id);
 							}
 						} else {
 							map.setFilter("markers", ['none','all']);
 						}
 
 					});
+				}
+			}
+			function listSetFilter(id) {
+				id = id.replace('activite-', ''); 
+				if(id=='all') {
+					$("#liste-membres li").show();
+				} else {
+					$("#liste-membres li").hide();
+					$("#liste-membres li[data-activites~='"+id+"']").show();
+					console.log(id);
 				}
 			}
 			function id2title(id) {

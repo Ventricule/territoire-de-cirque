@@ -10,26 +10,17 @@
 	<div id="folder-content">
 		<ul class="cf">
 
-			<?php
-			$markers = array(
-				'type' => "FeatureCollection",
-				'features' => array()
-			);
-
-			foreach( $page->children() as $item ) :
-				?>
+			<?php foreach( $page->children()->visible() as $item ) :	?>
 
 				<li data-uid='<?= $item->uid() ?>' class="<?= $item->intendedTemplate() ?>">
 					<a href="<?= $item->url()?>">
-						<figure class="icon"></figure>
+						<figure class="icon"><?= (string)$item->une() ? $item->file($item->une())->resize(300)->html(array('class'=>'tint-blue')) : '<div class="placeholder">' ?></figure>
 						<h3><?= $item->title() ?></h3>
 						<p class="small"><?= (string)$item->description() ? '— '.$item->description() : '' ?></p>
 					</a>
 				</li>
 
-				<?php
-			endforeach;
-			?>
+			<?php endforeach	?>
 
 		</ul>
 	</div>

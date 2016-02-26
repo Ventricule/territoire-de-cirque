@@ -26,6 +26,9 @@ fields:
 		label: Membre
 		type: tags
 		width: 1/2
+	une:
+		label: Image à la une
+		type: image
 	introduction:
 		label: Introduction
 		type: textarea
