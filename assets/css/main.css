@@ -372,6 +372,10 @@ h3, .h3, h4, .h4 {
 h4, .h4 {
 	text-align: center;
 }
+.small {
+	font-size: 0.8rem;
+	line-height: 1rem;
+}
 .emphase {
   font-family: "whoismono",monospace;
 	font-size: 1rem;
@@ -809,6 +813,37 @@ main .cell:hover figure.logo img {
 	display: inline-block;
 	padding: .2rem 2rem .2rem 0rem;
 	text-decoration: underline;
+}
+
+/* Ressources : Folder
+-------------------------------------------------- */
+#folder-content {
+	overflow: hidden;
+}
+#folder-content ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -4rem;
+}
+#folder-content li {
+	width: 12rem;
+	margin: 4rem 4rem 0 0;
+}
+#folder-content li figure {
+	border: 1px solid;
+	width: 100%;
+}
+#folder-content li.folder figure {
+	box-shadow: 2px 2px 0 #fff, 3px 3px 0 #0000E6, 5px 5px 0 #fff, 6px 6px 0 #0000E6;
+}
+#folder-content li figure:after {
+	padding-top: 100%;
+  display: block;
+  content: '';
+}
+#folder-content li p, #folder-content li h3 {
+	margin: 0;
 }
 
 

@@ -6,7 +6,7 @@
 		<?php
 		foreach($site->children()->visible() as $rubrique): 
 		?>
-		<li><a <?php e($rubrique->isOpen(), ' class="active"') ?> href="<?= $rubrique->url() ?>"><?= $rubrique->title() ?></a></li>
+		<li data-test='<?= $rubrique->isOpen() ?>'><a href="<?= $rubrique->url() ?>"><?= $rubrique->title() ?></a></li>
 		<?php
 		endforeach;
 		?>
