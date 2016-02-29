@@ -1,17 +1,5 @@
-Title: Territoire de cirque
+Title: Territoires de cirque
 
 ----
 
-Author: Samuel Rivers Moore + Pierre Tandille
-
-----
-
-Description: 
-
-----
-
-Keywords: 
-
-----
-
-Copyright: 
+Text: 

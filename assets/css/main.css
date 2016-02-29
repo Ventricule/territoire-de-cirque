@@ -616,11 +616,13 @@ main.wide {
 .filter-group {
 	font: 14px/20px 'whoismono', Arial, Helvetica, sans-serif;
 	position: fixed;
-	bottom: 2rem;
+	top: 4rem;
 	right: 2rem;
-	z-index: 1;
-	border: 1px solid;
-	border-bottom: none;
+	left: 25%;
+	margin-left: 2rem;
+	z-index: 9;
+	display: flex;
+	border-left: 1px solid;
 }
 .filter-group input[type=checkbox] {
 		display: none;
@@ -631,11 +633,16 @@ main.wide {
 	padding: .5rem .7rem .4rem .7rem;
 	border-bottom: 1px solid;
 	background-color: #fff;
+	border: 1px solid;
+	border-left: 0;
 }
+
 .filter-group input[type=checkbox] + label:hover,
 .filter-group input[type=checkbox]:checked + label{
-	background-color: #eee;
+	/*background-color: #eee;*/
+	background-image: url(../images/diffusion50.png);
 }
+
 .filter-group input[type=checkbox] + label:after {
 	content: '✔';
 	margin-left: 5px;
@@ -644,6 +651,7 @@ main.wide {
 .filter-group input[type=checkbox]:checked + label:after {
 		display: none;
 }
+
 .filter-group input[type=checkbox]:checked + label:before {
 		content: '✔';
 		margin-right: 5px;

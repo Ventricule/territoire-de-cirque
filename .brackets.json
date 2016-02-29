@@ -1,5 +1,6 @@
 {
     "jscodehints.detectedExclusions": [
-        "C:/wamp/www/territoires-de-cirque/assets/js/perfect-scrollbar.jquery.min.js"
+        "C:/wamp/www/territoires-de-cirque/assets/js/perfect-scrollbar.jquery.min.js",
+        "C:/wamp/www/territoires-de-cirque/assets/js/ol.js"
     ]
 }

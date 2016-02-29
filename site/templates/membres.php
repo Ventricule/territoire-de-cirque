@@ -36,7 +36,7 @@
 				);
 				?>
 
-				<li data-uid='<?= $membre->uid() ?>' data-activites="<?= $membre->activites() ?>">
+				<li data-uid='<?= $membre->uid() ?>' data-activites="<?= implode(' ', $membre->activites()->split()) ?>">
 					<a href="<?= $membre->url()?>">
 						<figure><img src='<?= $logo->url() ?>' width='<?= $logo->width() ?>' height='<?= $logo->height() ?>'/></figure>
 						<h2><?= $membre->title() ?></h2>
