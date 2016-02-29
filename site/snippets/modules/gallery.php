@@ -8,10 +8,10 @@
 
 	// Use the file collection
 	foreach($files as $file):
-		$thumb = $file->resize(1200);
+		$thumb = $file->resize(1000, 1000);
 		?>
 		<div class="slide-wrapper">
-			<figure class="slide" style="background-image:url('')">
+			<figure class="slide">
 				<img src="<?= $thumb->url() ?>" width="<?= $thumb->width() ?>" height="<?= $thumb->height() ?>">
 			</figure>
 			<div class="caption"><?= $file->caption() ?></div>

@@ -7,3 +7,7 @@ fields:
   title:
     label: Title
     type:  text
+	exergue:
+		label: Exergue
+		type: textarea
+		buttons: false

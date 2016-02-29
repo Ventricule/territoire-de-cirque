@@ -16,7 +16,7 @@
 					<a href="<?= $item->url()?>">
 						<figure class="icon"><?= (string)$item->une() ? $item->file($item->une())->resize(300)->html(array('class'=>'tint-blue')) : '<div class="placeholder">' ?></figure>
 						<h3><?= $item->title() ?></h3>
-						<p class="small"><?= (string)$item->description() ? '— '.$item->description() : '' ?></p>
+						<div class="small"><?= (string)$item->exergue() ? $item->exergue()->kt() : '' ?></div>
 					</a>
 				</li>
 

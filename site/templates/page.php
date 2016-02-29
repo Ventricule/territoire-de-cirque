@@ -3,11 +3,6 @@
 
 	<div id="left-side">
 		<?php snippet('menus/siblings') ?>
-		<?php foreach($page->infos()->toStructure() as $info): ?>
-			<div class="informations-secondaires">
-				<div class="secondaire"><?= $info->text()->kt() ?></div>
-			</div>
-		<?php endforeach ?>
 	</div>
 
   <main class="main" role="main">

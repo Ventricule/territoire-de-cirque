@@ -541,7 +541,7 @@ main.wide {
 /* Page
 -------------------------------------------------- */
 .chapo {
-	margin-bottom: 4rem;
+	margin: 4rem 0px;
 }
 .informations-secondaires {
 	margin-left: 2rem;
@@ -564,40 +564,33 @@ main.wide {
 	cursor: ew-resize;
 	text-align: center;
 }
+.gallery.open {
+	margin: 0;
+}
 .gallery .slide-wrapper {
 	margin-bottom: 4rem;
-	height: calc(100vh - 8rem);
-	position: relative;
 }
 .gallery .slide-wrapper figure {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+	max-height: calc(100vh - 8rem);
+	margin-bottom: .5rem;
 }
 .gallery .slide-wrapper figure img {
+	max-height: calc(100vh - 8rem);
 	width: auto;
-	min-height: 100%;
-	max-width: unset;
-	max-height: 100%;
-	margin: auto;
-	left: 50%;
-	position: absolute;
-	transform: translateX(-50%);
 }
-.open .gallery .slide-wrapper figure img {
-	
+.gallery.open figure {
+	width: 80%;
+	max-width: 900px;
+	display: inline-block;
 }
 .gallery .caption {
 	display: none;
 	width: 80%;
 	max-width: 900px;
-	position: absolute;
-	top: 102%;
-	left: 50%;
-	transform: translateX(-50%);
 }
 .open .gallery .caption {
 	display: inline-block;
+	margin: 0 10%;
 }
 .gallery .btn-close {
 	position: fixed;

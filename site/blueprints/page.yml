@@ -1,0 +1,24 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Page
+pages: true
+files: 
+  sortable: true
+fields:
+	title:
+		label: Titre
+		type:  text
+	exergue:
+		label: Exergue
+		type: textarea
+		buttons: false
+	text:
+		label: Texte
+		type:  textarea
+	gallery:
+		label: Galerie
+		type: selector
+		mode: multiple
+		sort: sort
+		types:
+			- image

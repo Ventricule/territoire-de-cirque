@@ -10,6 +10,7 @@ fields:
   title:
     label: Nom
     type:  text
-	description:
-		label: Description
-		type: text
+	exergue:
+		label: Exergue
+		type: textarea
+		buttons: false

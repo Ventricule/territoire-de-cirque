@@ -17,12 +17,12 @@
   .ps-container.ps-in-scrolling {
     pointer-events: none; }
     .ps-container.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail {
-      background-color: #fff;background-image:url(../images/diffusion.png);
+      background-color: rgba(255,255,255,.4);background-image:url(../images/diffusion.png);
       opacity: 0.9; }
       .ps-container.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail > .ps-scrollbar-x {
         background-color: #0000E6; }
     .ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail {
-      background-color: #fff;background-image:url(../images/diffusion.png);
+      background-color: rgba(255,255,255,.4); background-image:url(../images/diffusion.png);
       opacity: 0.9; }
       .ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
         background-color: #0000E6; }
@@ -44,7 +44,7 @@
     .ps-container > .ps-scrollbar-x-rail > .ps-scrollbar-x {
       position: absolute;
       /* please don't change 'position' */
-      background-color: #fff;
+      background-color: rgba(255,255,255,.4);
 			border: 1px solid;
 			background-image: url(../images/diffusion.png);
       -webkit-border-radius: 4px;
@@ -75,7 +75,7 @@
     .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
       position: absolute;
       /* please don't change 'position' */
-      background-color: #fff;
+      background-color: rgba(255,255,255,.4);
 			border: 1px solid;
 			background-image: url(../images/diffusion.png);
       -webkit-border-radius: 4px;
@@ -91,12 +91,12 @@
   .ps-container:hover.ps-in-scrolling {
     pointer-events: none; }
     .ps-container:hover.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail {
-      background-color: #fff;background-image:url(../images/diffusion.png);
+      background-color: rgba(255,255,255,.4);background-image:url(../images/diffusion.png);
       opacity: 0.9; }
       .ps-container:hover.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail > .ps-scrollbar-x {
         background-color: #0000E6; }
     .ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail {
-      background-color: #fff;background-image:url(../images/diffusion.png);
+      background-color: rgba(255,255,255,.4);background-image:url(../images/diffusion.png);
       opacity: 0.9; }
       .ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
         background-color: #0000E6; }
@@ -104,12 +104,12 @@
   .ps-container:hover > .ps-scrollbar-y-rail {
     opacity: 0.6; }
   .ps-container:hover > .ps-scrollbar-x-rail:hover {
-    background-color: #fff;background-image:url(../images/diffusion.png);
+    background-color: rgba(255,255,255,.4);background-image:url(../images/diffusion.png);
     opacity: 0.9; }
     .ps-container:hover > .ps-scrollbar-x-rail:hover > .ps-scrollbar-x {
       background-color: #0000E6; }
   .ps-container:hover > .ps-scrollbar-y-rail:hover {
-    background-color: #fff;background-image:url(../images/diffusion.png);
+    background-color: rgba(255,255,255,.4);background-image:url(../images/diffusion.png);
     opacity: 0.9; }
     .ps-container:hover > .ps-scrollbar-y-rail:hover > .ps-scrollbar-y {
       background-color: #0000E6; }
