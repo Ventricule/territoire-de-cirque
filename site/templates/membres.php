@@ -6,6 +6,8 @@
 </div>
 
 <main class="main wide" role="main">
+	
+	
 	<div id="map-membres" class="map"><nav id='filter-group' class='filter-group'></nav></div>
 	
 	

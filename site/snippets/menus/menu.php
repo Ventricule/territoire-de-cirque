@@ -3,6 +3,7 @@
 	<div id="logo-tdc"><a href="<?= $site->url() ?>"><img src="<?= $site->url() ?>/assets/images/logo.svg"></a></div>
 
   <ul class="menu nav-font cf">
+		<!--<li><a href="#"><img src="<?= $site->url() ?>/assets/images/home.svg" /></a></li>-->
 		<?php
 		foreach($site->children()->visible() as $rubrique): 
 		?>

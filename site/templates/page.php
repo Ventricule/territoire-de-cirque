@@ -6,7 +6,8 @@
 	</div>
 
   <main class="main" role="main">
-					<?= $page->text()->kt() ?>
+		
+		<?= $page->text()->kt() ?>
   </main>
 
 	<div id="right-side">

@@ -9,8 +9,7 @@
 			<?php snippet('menus/siblings', array('page' => $page)) ?>
 	</div>
 
-  <main class="main" role="main">
-		
+  <main class="main" role="main">	
 		<div class="cartouche <?= $wide ?> cf">
 			<div class="row"><div class="cell"><h1><?= $page->title() ?></h1></div></div>
 			<div class="row trame50"><div class="cell"><h3><?= $page->complement() ?></h3></div></div>

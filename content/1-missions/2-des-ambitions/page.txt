@@ -4,8 +4,6 @@ Title: Des ambitions
 
 Text: 
 
-## Des ambitions
-
 (columns...)
 
 ### Accompagner la vitalité, la créativité et la capacité d’innovation du cirque
@@ -146,3 +144,7 @@ Infos:
     Marie Jacolot
     _Traduction_
     Naomi Norberg
+
+----
+
+Exergue: 
