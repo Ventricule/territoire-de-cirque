@@ -13,7 +13,7 @@ Text:
 La force de Territoires de Cirque est son ouverture incarnée par la diversité de ses membres répartis sur des territoires aussi bien urbains, périurbains que ruraux. La compréhension des enjeux territoriaux est l’un des moteurs de son action. Elle permet de concevoir des solutions partagées avec les partenaires publics et contribue ainsi à amplifier la démocratisation et la décentralisation culturelles.
 Les principes qui gouvernent l’association sont le partage, la concertation et la cohésion, dans le respect de la pluralité des points de vue artistiques et la recherche d’un juste équilibre dans les relations avec les artistes et les compagnies indépendantes. D’où une approche de la production qui se veut éthique et prospective pour accompagner au mieux les évolutions de l’économie de ce secteur d’activité.
 
-(image: olivier_meyrou.jpg)
+(forme: cercle)
 
 ++++
 
@@ -74,7 +74,7 @@ Pagebuilder:
 
 ----
 
-Gallery: chapbleu_bascule2-medium.jpg,nooslrds-16.jpg,verrerie-mars-2011-049-jolie.jpg
+Gallery: chapbleu_bascule2-medium.jpg,nooslrds-16.jpg
 
 ----
 

@@ -120,7 +120,7 @@ Pagebuilder:
 
 ----
 
-Gallery: nooslrds-16.jpg,verrerie-mars-2011-049-jolie.jpg,5.dome-ecuries-circa.jpg,olivier_meyrou.jpg
+Gallery: verrerie-mars-2011-049-jolie.jpg,olivier_meyrou.jpg,5.dome-ecuries-circa.jpg
 
 ----
 

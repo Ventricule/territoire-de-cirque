@@ -94,7 +94,7 @@ $(document).ready( function () {
 				"interactive": true,
 				"paint": {
 						"circle-radius": 10,
-						"circle-color": '#02c071'
+						"circle-color": '#0000E6'
 				}
 		});
 		
@@ -102,12 +102,13 @@ $(document).ready( function () {
 			var symbol = feature.properties['marker-symbol'];
 			var layerID = 'poi-' + symbol;
 			var activites = feature.properties;
+			addCheckbox('all');
 			$.each(activites, function(key, value) {
 					if(!key.indexOf('activite-')) {
 						addCheckbox(key);
 					}
 			});
-			addCheckbox('all');
+			
 			function addCheckbox(id) {
 				if ( ! $(filterGroup).children('#'+id).length ) {
 

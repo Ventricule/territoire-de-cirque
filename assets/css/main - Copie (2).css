@@ -113,7 +113,6 @@ a:hover {
 a:focus {
 	outline: none;
 }
-
 /* Characters styles
 -------------------------------------------------- */
 .nav-font {
@@ -122,62 +121,6 @@ a:focus {
 	line-height: 1.3rem;
 	letter-spacing: .5px;
 }
-
-/* Shapes
--------------------------------------------------- */
-.forme.cercle {
-	border-radius: 100%;
-	padding-bottom: 100%;
-}
-
-/* Colors 
--------------------------------------------------- */
-/* MISSIONS */
-.rubrique-missions .menu .active {
-   border: .25rem solid #31e967;
-}
-.rubrique-missions #menu-second li.active a {
-   border-bottom: .25rem solid #31e967;
-}
-.rubrique-missions .chapo {
-	margin-bottom: 1rem;
-	padding-bottom: 1rem;
-	border-bottom: 1rem solid #31e967;
-}
-.rubrique-missions .forme.cercle {
-	background-color: #31e967;
-}
-
-/* MEMBRES */
-.rubrique-membres .menu .active {
-   border: .25rem solid #ffc438;
-}
-.rubrique-membres #menu-second li.active a {
-   border-bottom: .25rem solid #ffc438;
-}
-
-/* RESSOURCES */
-.rubrique-ressources .menu .active {
-   border: .25rem solid #ff7651;
-}
-.rubrique-ressources #menu-second li.active a {
-   border-bottom: .25rem solid #ff7651;
-}
-.rubrique-ressources #folder-content li .caption {
-	color: #ff7651;
-}
-.rubrique-ressources .bloc-titre {
-	color: #ff7651;
-}
-.rubrique-ressources .introduction {
-	border-bottom: 1rem solid #ff7651;
-	margin-bottom: 1rem;
-	padding-bottom: 1rem;
-}
-.rubrique-ressources .file-infos {
-	background-color: #ff7651;
-}
-
 
 /* Helpers
 -------------------------------------------------- */
@@ -282,7 +225,7 @@ body {
 
 }
 .menu .active {
-	border: .25rem solid;
+	border: 1px solid;
 }
 .menu li {
 	text-transform: uppercase;
@@ -363,11 +306,8 @@ body {
 	#menu-second li {
 		padding: .75rem 2rem;
 		background-color: #fff;
-		/*border-left: 1px solid;
-		border-right: 1px solid;*/
-	}
-	#menu-second li:first-child {
-		border-top: 1px solid;	
+		border-left: 1px solid;
+		border-right: 1px solid;
 	}
 	#menu-second li.active {
 		/*border-left: 0.25rem solid;
@@ -378,7 +318,7 @@ body {
 	}
 	#menu-second li.active a {
 		border: 0;
-		border-bottom: .25rem solid;
+		text-decoration: underline;
 	}
 	#menu-second li>img {
 		display: inline;
@@ -655,9 +595,7 @@ main.wide {
 /* Page
 -------------------------------------------------- */
 .chapo {
-	margin-bottom: 1rem;
-	padding-bottom: 1rem;
-	border-bottom: 1rem solid;
+	margin-bottom: 4rem;
 }
 .informations-secondaires {
 	margin-left: 2rem;
@@ -900,10 +838,9 @@ body.gallery-open #right-side {
 	bottom: 0;
 	left: 0;
 	margin: 0;
-	text-align: center;
+	border-top: 1px dashed;
 	width: 100%;
 	padding: .2rem 1rem;
-	color: #ffc438;
 }
 #liste-membres ul li figure {
 	height: 50%;
@@ -1116,7 +1053,7 @@ main .cell:hover figure.logo img {
 #folder-content li .caption {
 	position: absolute;
 	top: 100%;
-	margin-top: 0rem;
+	margin-top: .5rem;
 	max-height: 3rem;
 	padding-right: 4rem;
 }
@@ -1137,22 +1074,6 @@ main .cell:hover figure.logo img {
 }
 .template-file main h1 {
 	margin-bottom: 2rem;
-}
-.template-file .cover {
-	position: relative;
-}
-.template-file .file-infos {
-	position: absolute;
-	width: 20rem;
-	height: 20rem;
-	border-radius: 100%;
-	right: 0;
-	top: 100%;
-	margin-top: 1rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	color: rgb(255, 255, 255);
 }
 .template-file main .date, .template-file main h1 {
 	text-align: center;

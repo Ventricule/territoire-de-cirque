@@ -23,5 +23,5 @@
   ) ); ?>
 
 </head>
-<body class="page-<?= $page->uid() ?> template-<?= $page->intendedTemplate() ?> cf">
+<body class="page-<?= $page->uid() ?> template-<?= $page->intendedTemplate() ?> rubrique-<?= $page->parents()->flip()->first()->uid() ?> cf">
 	

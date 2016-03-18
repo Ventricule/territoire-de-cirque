@@ -5,12 +5,20 @@ pages:
 	template:
 		- file
 		- folder
-files: false
+files:
+	type:
+		- image
 fields:
   title:
     label: Nom
     type:  text
 	exergue:
-		label: Exergue
-		type: textarea
+		label: Description
+		type: text
 		buttons: false
+	text:
+		label: Édito
+		type: textarea
+	cover:
+		label: Couverture
+		type: image
