@@ -18,10 +18,11 @@
   <?php echo js( array(
     'assets/js/jquery-1.11.3.min.js', 
     'https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.1/mapbox-gl.js',
+    'assets/js/filtrr2-0.6.3.min.js',
     'assets/js/perfect-scrollbar.jquery.min.js',
     'assets/js/script.js'
   ) ); ?>
 
 </head>
-<body class="page-<?= $page->uid() ?> template-<?= $page->intendedTemplate() ?> rubrique-<?= $page->parents()->flip()->first()->uid() ?> cf">
+<body class="page-<?= $page->uid() ?> template-<?= $page->intendedTemplate() ?> rubrique-<?= $page->depth() > 1 ? $page->parents()->flip()->first()->uid() : 'home' ; ?> cf">
 	

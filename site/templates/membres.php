@@ -21,7 +21,7 @@
 			);
 
 			foreach( $page->children() as $membre ) :
-				$logo = $membre->file($membre->logo())->resize(300, 300);
+				$logo = $membre->file($membre->logo())->crop(300, 300);
 				$activites = $membre->activites()->split();
 				$properties = [];
 				foreach ($activites as $activite) {

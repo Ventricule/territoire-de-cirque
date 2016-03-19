@@ -166,15 +166,15 @@ a:focus {
 .rubrique-ressources #folder-content li .caption {
 	color: #ff7651;
 }
-.rubrique-ressources .bloc-titre {
-	color: #ff7651;
-}
 .rubrique-ressources .introduction {
 	border-bottom: 1rem solid #ff7651;
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 }
 .rubrique-ressources .file-infos {
+	background-color: #ff7651;
+}
+#searchbar input[type=submit] {
 	background-color: #ff7651;
 }
 
@@ -908,6 +908,7 @@ body.gallery-open #right-side {
 #liste-membres ul li figure {
 	height: 50%;
 	position: relative;
+	background-color: #0000E6;
 }
 #liste-membres ul li figure img {
 	height: auto;
@@ -917,6 +918,24 @@ body.gallery-open #right-side {
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+#liste-membres ul li figure img {
+	mix-blend-mode: screen;
+	filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+	-webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+#liste-membres ul li:hover figure img {
+	mix-blend-mode: inherit;
+	-webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
 }
 
 
@@ -1140,6 +1159,17 @@ main .cell:hover figure.logo img {
 }
 .template-file .cover {
 	position: relative;
+}
+.template-file .cover h1 {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    position: absolute;
+    background-color: #fff;
+    left: 50%;
+    padding: 1rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff7651;
 }
 .template-file .file-infos {
 	position: absolute;

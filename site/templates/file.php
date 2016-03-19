@@ -7,11 +7,8 @@
 
   <main class="main wide" role="main">
 		
-		<div class="bloc-titre">
-			<h1><?= $page->title(); ?></h1>
-		</div>		
-		
 		<figure class="cover">
+			<h1><?= $page->title(); ?></h1>
 			<div class="file-infos">
 				<p class="author"><?= $page->author() ?></p>
 				<p class="member"><?= $page->member() ?></p>

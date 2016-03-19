@@ -54,6 +54,11 @@ $(document).ready( function () {
 	----------------------------------------- */
 	$("#menu-second").perfectScrollbar(); 
 	
+	/* Liste des membres : Couleur
+	----------------------------------------- */
+
+	
+	
 	/* Carte des membres Mapbox GL 
 	----------------------------------------- */
 	mapboxgl.accessToken = 'pk.eyJ1IjoicGllcnJlcGllcnJlcGllcnJlIiwiYSI6IkdXdE5CRFEifQ.3zLbKVYfHituW8BVU-bl5g';
