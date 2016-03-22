@@ -169,7 +169,6 @@ a:focus {
 .rubrique-ressources .introduction {
 	border-bottom: 1rem solid #ff7651;
 	margin-bottom: 1rem;
-	padding-bottom: 1rem;
 }
 .rubrique-ressources .file-infos {
 	background-color: #ff7651;
@@ -1159,17 +1158,29 @@ main .cell:hover figure.logo img {
 }
 .template-file .cover {
 	position: relative;
+	height: 25rem;
 }
+/*
 .template-file .cover h1 {
-    text-align: left;
-    margin-bottom: 0.5rem;
-    position: absolute;
-    background-color: #fff;
-    left: 50%;
-    padding: 1rem;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #ff7651;
+	text-align: left;
+	margin-bottom: 0.5rem;
+	position: absolute;
+	background-color: #fff;
+	left: 1rem;
+	padding: 1rem;
+	top: 1rem;
+	color: #ff7651;
+	border: .25rem solid;
+}
+*/
+.template-file .cover figure {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-size: cover;
+	background-position: center;
 }
 .template-file .file-infos {
 	position: absolute;
@@ -1187,8 +1198,10 @@ main .cell:hover figure.logo img {
 .template-file main .date, .template-file main h1 {
 	text-align: center;
 }
-.template-file main figure, .template-file main figure img {
-	width: 100%;
+.template-file h1.main-title {
+	margin: 1rem 0px;
+	font-size: 1.8rem;
+	line-height: 2rem;
 }
 
 

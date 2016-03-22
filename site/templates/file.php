@@ -7,16 +7,17 @@
 
   <main class="main wide" role="main">
 		
-		<figure class="cover">
-			<h1><?= $page->title(); ?></h1>
+		<div class="cover">
+			<figure style="<?= (string)$page->une() ? 'background-image:url(' . $page->file($page->une())->resize(1000)->url() . ')' : '' ; ?>">
+			</figure>
 			<div class="file-infos">
 				<p class="author"><?= $page->author() ?></p>
 				<p class="member"><?= $page->member() ?></p>
 				<p class="date"><?= $page->date('d.m.Y') ?></p>
 			</div>
-			<?= (string)$page->une() ? $page->file($page->une())->resize(1000)->html() : '' ; ?>
-		</figure>
+		</div>
 		<div class="text-wrapper">
+			<h1 class="main-title"><?= $page->title(); ?></h1>
 			<div class="h3 introduction"><?= $page->introduction()->kt() ?></div>
 			<?= $page->text()->kt() ?>
 		</div>
