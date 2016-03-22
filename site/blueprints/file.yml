@@ -19,16 +19,19 @@ fields:
 		default: today
 		width: 1/4
 	author:
-		label: Auteur
+		label: Auteur.e.s
 		type: tags
-		width: 1/2
 	member:
-		label: Membre
+		label: Membre.s
 		type: tags
-		width: 1/2
 	une:
 		label: Image à la une
 		type: image
+		width: 1/3
+	tags:
+		label: Mots-clés
+		type: tags
+		width: 2/3
 	introduction:
 		label: Introduction
 		type: textarea

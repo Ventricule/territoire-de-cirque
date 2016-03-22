@@ -1060,6 +1060,74 @@ main .cell:hover figure.logo img {
 	flex: 1;
 	margin-right: 2rem;
 }
+#searchbar .here {
+	white-space: nowrap;
+	height: 2rem;
+	flex-shrink: 0;
+	margin-right: 2rem;
+}
+#searchbar .here input[type=checkbox] {
+	margin-right: 0.5rem;
+	display: inline-block;
+}
+#searchbar .here label {
+	white-space: nowrap;
+	display: inline-block;
+	height: 2rem;
+	vertical-align: top;
+	font-size: 0.85rem;
+	line-height: 1rem;
+}
+#searchbar .btn-more {
+	cursor: pointer;
+	margin-right: 2rem;
+	background-color: #fff;
+	padding: 0px 1rem;
+	line-height: 2rem;
+	font-size: 0.85rem;
+	border-radius: 1rem;
+	max-width: 2rem;
+	overflow: hidden;
+	height: 2rem;
+	background-image: url(../images/plus.svg);
+	background-repeat: no-repeat;
+	background-position: .6rem center;
+	background-size: .85rem;
+	transition: all .5s;
+	white-space: nowrap;
+}
+#searchbar .btn-more span {
+	vertical-align: top;
+}
+#searchbar .btn-more span:first-child {
+	width: 1rem;
+	text-indent: 9999px;
+	overflow: hidden;
+	display: inline-block;
+}
+#searchbar .btn-more:hover {
+	max-width: 20rem;
+}
+#searchbar.transition .btn-more {
+	max-width: 2rem !important;
+	transform: rotate(0deg) !important;
+}
+#searchbar .more {
+	display: flex;
+	transition: all 1s;
+	max-width: 0%;
+	overflow: hidden;
+}
+#searchbar.full .more{
+	max-width: 100%;
+}
+#searchbar.full.transition .btn-more {
+	transition: all .2s;
+}
+#searchbar.full .btn-more:hover {
+	max-width: 2rem;
+	transform: rotate(45deg);
+}
 
 /* Ressources : Folder Header
 -------------------------------------------------- */
