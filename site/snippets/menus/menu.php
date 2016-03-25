@@ -11,6 +11,19 @@
 		<?php
 		endforeach;
 		?>
+		<li>
+			<div class="lang-switcher">
+				<?php foreach($site->languages() as $language): ?>
+					<?php if ($site->language() != $language): ?>
+					<a href="<?php echo $page->url($language->code()) ?>">
+						<?php echo html($language->code()) ?>
+					</a>
+					<?php else : ?>
+						<span class="active"><?php echo html($language->code()) ?></span>
+					<?php endif; ?>
+				<?php endforeach ?>
+			</div>
+		</li>
 		<li><a href="#" class="btn-menu-plus"><img src="<?= $site->url() ?>/assets/images/plus.svg" alt="Suivre" title="Suivre" /></a></li>
   </ul>
 	

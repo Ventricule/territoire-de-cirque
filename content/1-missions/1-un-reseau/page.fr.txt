@@ -1,0 +1,114 @@
+Title: Un réseau
+
+----
+
+Text: 
+
+(chapo...)
+
+Fondée en 2004 dans l’élan de l’*Année des Arts du cirque* par ceux qui deviendront six ans plus tard les premiers Pôles nationaux des arts du cirque, l’association Territoires de Cirque rassemble près de quarante structures engagées dans le soutien à l’émergence, la création, et la diffusion du cirque. Ouvertes à toutes les esthétiques du spectacle vivant ou spécialisées, elles sont des laboratoires de recherche, scènes nationales ou conventionnées, théâtres de ville, services culturels, lieux de patrimoine, ou établissements de production.
+
+(...chapo)
+
+(forme: ligne)
+
+(columns...)
+
+## Des valeurs
+
+La force de Territoires de Cirque est son ouverture incarnée par la diversité de ses membres répartis sur des territoires aussi bien urbains, péri-urbains que ruraux. La compréhension des enjeux territoriaux est l’un des moteurs de son action. Elle permet de concevoir des solutions partagées avec les partenaires publics et contribue ainsi à **amplifier la démocratisation et la décentralisation culturelles**. 
+
+Les principes qui gouvernent l’association sont le partage, la concertation et la cohésion, dans le respect de la pluralité des points de vue artistiques et la recherche d’un juste équilibre dans les relations avec les artistes et les compagnies indépendantes. D’où une approche de la production qui se veut éthique et prospective pour accompagner au mieux les évolutions de l’économie de ce secteur d’activité.
+
+(forme: cercle)
+
+++++
+
+## Un engagement
+
+Refonte des politiques publiques, évolution de la carte des territoires, resserrements budgétaires, le monde culturel vit une profonde mutation. Pour répondre à ces nouveaux défis, Territoires de Cirque se mobilise dans un esprit de coopération, afin de **renforcer la place de l’art et de la culture dans notre société**.
+
+Le cirque appelle une attention particulière car ses moyens demeurent faibles. Or ses spécificités – dont la création sous chapiteau – demandent à repenser les modèles économiques pour lui garantir un développement pérenne. Combat urgent dans lequel Territoires de Cirque s’est engagée avec passion.
+
+## Des missions
+Créer un espace de concertation et d’action professionnelle dédié à cette discipline
+
+Etre un partenaire actif et une force de propositions auprès des pouvoirs publics, institutionnels et professionnels, tant au niveau national qu’international.
+
+(...columns)
+
+----
+
+Page: 
+
+- 
+  text: |
+    Le cirque est un art vif, transgressif,
+    un art des croisements. Riche de sa jeune histoire, il est une expression artistique majeure du XXIe siècle. Sur la piste comme sur la scène, fort de ses écritures innovantes, transdisciplinaire et libre, le cirque est un art populaire, un art à part entière.
+  _fieldset: chapo
+- 
+  col1: |
+    **Des valeurs**
+    
+    La force de Territoires de Cirque est son ouverture incarnée par la diversité de ses membres répartis sur des territoires aussi bien urbains, périurbains que ruraux. La compréhension des enjeux territoriaux est l’un des moteurs de son action. Elle permet de concevoir des solutions partagées avec les partenaires publics et contribue ainsi à amplifier la démocratisation et la décentralisation culturelles.
+    Les principes qui gouvernent l’association sont le partage, la concertation et la cohésion, dans le respect de la pluralité des points de vue artistiques et la recherche d’un juste équilibre dans les relations avec les artistes et les compagnies indépendantes. D’où une approche de la production qui se veut éthique et prospective pour accompagner au mieux les évolutions de l’économie de ce secteur d’activité.
+  col2: |
+    **Un réseau **
+    
+    Fondée en 2004 dans l’élan de l’Année des Arts du cirque par ceux qui deviendront six ans plus tard les premiers Pôles Nationaux des Arts du Cirque, l’association Territoires de Cirque rassemble près de quarante structures engagées dans le soutien à l’émergence, la création et la diffusion du cirque. Ouvertes à toutes les esthétiques du spectacle vivant ou spécialisées, elles sont des laboratoires de recherche, scènes nationales ou conventionnées, théâtres de ville, services culturels, lieux de patrimoine, ou établissements de production.
+    
+    **Un engagement **
+    
+    Refonte des politiques publiques, évolution de la carte des territoires, resserrements budgétaires, le monde culturel vit une profonde mutation. Pour répondre à ces nouveaux défis, Territoires de Cirque se mobilise dans un esprit de coopération, afin de renforcer la place de l’art et de la culture dans notre société. Le cirque appelle une attention particulière, car ses moyens demeurent  faibles. Or ses spécificités — dont la création sous chapiteau — demandent à repenser les modèles économiques pour lui garantir un développement pérenne. Combat urgent dans lequel Territoires de Cirque s’est engagée avec passion.
+  _fieldset: colonnes2
+- 
+  text: |
+    **Des ambitions**
+    
+    Accompagner la vitalité, la créativité et
+    la capacité d’innovation du cirque
+    
+    — Connaître et faire connaître le cirque :
+    Les membres de ce réseau, par leurs échanges et une veille permanente, sont attentifs à tous les courants de la création, concourent au repérage des nouvelles écritures scéniques et alimentent par leur expertise la curiosité des acteurs culturels à l’égard de ce champ artistique.
+    
+    — Élargir la diffusion du cirque en France et à l’étranger :
+    Territoires de Cirque initie des rencontres professionnelles, y prend part en France et à l’étranger et développe des partenariats — avec l’Office National de Diffusion Artistique, HorsLesMurs, Jeunes Talents Cirque Europe, les organismes européens,…
+    
+    — Soutenir la création et le développement des moyens de production :
+    Moins de 2 % des crédits d’intervention de l’État sont consacrés au cirque et trop peu de compagnies sont conventionnées. Territoires de Cirque entend convaincre les puissances publiques de la nécessité de mieux prendre en compte les caractéristiques techniques, professionnelles du cirque, et leurs incidences sur les processus de création.
+  _fieldset: colonne1
+
+----
+
+Pagebuilder: 
+
+----
+
+Gallery: chapbleu_bascule2-medium.jpg,nooslrds-16.jpg
+
+----
+
+Infos: 
+
+- 
+  text: |
+    _Siège social_
+    c/o ONDA
+    13 bis rue Henry Monnier
+    75 009 Paris
+- 
+  text: |
+    _Directeur
+    de la publication_
+    Frédéric Durnerin
+    _Rédaction en chef_
+    Hélène Langlois
+    et Philippe Le Gal
+    _Coordination_
+    Marie Jacolot
+    _Traduction_
+    Naomi Norberg
+
+----
+
+Exergue: Association de structures de production et de diffusion artistique

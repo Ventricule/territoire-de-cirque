@@ -2,12 +2,12 @@
 
 kirbytext::$tags['forme'] = array(
   'html' => function($tag) {
-		switch ( $tag->attr('forme') ) :
+		switch ( $forme = $tag->attr('forme') ) :
 			case 'cercle':
 				return '<div class="forme cercle"></div>';
 				break;
 			default:
-				return false;
+				return "<div class='forme $forme'></div>";
 				break;
 		endswitch;
   }

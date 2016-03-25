@@ -153,10 +153,10 @@ $(document).ready( function () {
 				function listSetFilter(id) {
 					id = id.replace('activite-', ''); 
 					if(id=='all') {
-						$("#liste-membres li").show();
+						$("#liste-membres li").removeClass('hide');
 					} else {
-						$("#liste-membres li").hide();
-						$("#liste-membres li[data-activites~='"+id+"']").show();
+						$("#liste-membres li").addClass('hide');
+						$("#liste-membres li[data-activites~='"+id+"']").removeClass('hide');
 						console.log(id);
 					}
 				}
@@ -235,6 +235,15 @@ $(document).ready( function () {
 	}
 	
 	
+	
+	/* Folder : Icon
+	----------------------------------------- */
+	window.onpageshow = function(event) {
+    if (event.persisted) { $('#folder-content li').removeClass('open'); }
+	};
+	$('#folder-content li .icon').click(function() {
+		$(this).parent().parent().toggleClass('open');
+	})
 	
 	/* Folder : SearchBar
 	----------------------------------------- */

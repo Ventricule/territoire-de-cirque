@@ -29,6 +29,24 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
+c::set('languages', array(
+	array(
+    'code'    => 'fr',
+    'name'    => 'Français',
+    'locale'  => 'fr_FR',
+    'url'     => '/',
+		'default' => true,
+  ),
+  array(
+    'code'    => 'en',
+    'name'    => 'English',
+    'locale'  => 'en_US',
+    'url'     => '/en',
+  )
+));
+
+c::set('language.detect', false);
+
 c::set('markdown.extra', true);
 
 c::set('roles', array(
@@ -63,22 +81,22 @@ function id2title($id) {
 	$id = str_replace('activite-', '', $id); 
 	switch ($id) {
 		case 'diffusion':
-			return 'Lieux de diffusion';
+			return 'Lieu de diffusion';
 			break;
 		case 'residence':
-			return 'Lieux de résidence';
+			return 'Lieu de résidence';
 			break;
 		case 'chapiteau':
-			return 'Espaces chapiteau';
+			return 'Espace chapiteau';
 			break;
 		case 'polenationnal':
-			return 'Pôles nationnaux';
+			return 'Pôle nationnal';
 			break;
 		case 'festival':
-			return 'Festivals';
+			return 'Festival';
 			break;
 		case 'formation':
-			return 'Formations professionnelles';
+			return 'Formation professionnelle';
 			break;
 		case 'all':
 			return 'Tous les membres';

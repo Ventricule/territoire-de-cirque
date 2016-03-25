@@ -21,7 +21,7 @@
 			);
 
 			foreach( $page->children() as $membre ) :
-				$logo = $membre->file($membre->logo())->crop(300, 300);
+				$logo = thumb( $membre->file($membre->logo()), array( 'width' => 300, 'grayscale' => false ) );
 				$activites = $membre->activites()->split();
 				$properties = [];
 				foreach ($activites as $activite) {
@@ -39,12 +39,17 @@
 				?>
 
 				<li data-uid='<?= $membre->uid() ?>' data-activites="<?= implode(' ', $membre->activites()->split()) ?>">
-					<a href="<?= $membre->url()?>">
+					<a href="<?= $membre->url()?>" class="titraille">
 						<figure><img src='<?= $logo->url() ?>' width='<?= $logo->width() ?>' height='<?= $logo->height() ?>'/></figure>
-						<h2><?= $membre->title() ?></h2>
-						<h3><?= $membre->complement() ?></h3>
+						<h2 class="membre-prenom"><?= $membre->title() ?></h2>
 					</a>
-					<p class="ville"><?= $membre->ville()." ( {$membre->departement()} ) " ?></p>
+						<h3 class="membre-nom"><?= $membre->complement() ?></h3>
+						<h3 class="membre-activites"><?php foreach($activites as $activite)	echo " — ".id2title($activite); ?></h3>
+						<h3 class="membre-ville"><?= $membre->ville()." ({$membre->departement()}) " ?></h3>
+					<a href="<?= $membre->url()?>">
+						<h3 class="membre-more">Voir +</h3>
+					</a>
+					
 
 				</li>
 

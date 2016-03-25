@@ -37,16 +37,16 @@
 				<li data-uid='<?= $item->uid() ?>' class="<?= $item->intendedTemplate() ?>">
 					<a href="<?= $item->url()?>">
 						<div class="icon"><h3><?= $item->title() ?></h3></div>
-						<div class="caption">
-							<?php 
-							$membres = (string)$item->member() ? "— " . implode(', ', $item->member()->split()) : '';
-							$infos = [ implode(', ', $item->author()->split()), $membres, $item->date('m.Y'), $item->exergue()->kt() ] ;
-							foreach($infos as $info):
-								echo "<div class='small'>$info</div>";
-							endforeach;
-							?>
-						</div>
 					</a>
+					<div class="caption">
+						<?php 
+						$membres = (string)$item->member() ? "— " . implode(', ', $item->member()->split()) : '';
+						$infos = [ implode(', ', $item->author()->split()), $membres, $item->date('m.Y'), $item->exergue()->kt() ] ;
+						foreach($infos as $info):
+							echo "<div class='small'>$info</div>";
+						endforeach;
+						?>
+					</div>
 				</li>
 
 			<?php endforeach	?>

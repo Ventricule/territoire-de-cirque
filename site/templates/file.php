@@ -10,16 +10,20 @@
 		<div class="cover">
 			<figure style="<?= (string)$page->une() ? 'background-image:url(' . $page->file($page->une())->resize(1000)->url() . ')' : '' ; ?>">
 			</figure>
-			<div class="file-infos">
-				<p class="author"><?= $page->author() ?></p>
-				<p class="member"><?= $page->member() ?></p>
-				<p class="date"><?= $page->date('d.m.Y') ?></p>
-			</div>
 		</div>
-		<div class="text-wrapper">
+		<div class="file-content">
 			<h1 class="main-title"><?= $page->title(); ?></h1>
 			<div class="h3 introduction"><?= $page->introduction()->kt() ?></div>
-			<?= $page->text()->kt() ?>
+			<div class="container">
+				<div class="file-infos">
+					<p class="author"><?= $page->author() ?></p>
+					<p class="member"><?= $page->member() ?></p>
+					<p class="date"><?= $page->date('d.m.Y') ?></p>
+				</div>
+				<div class="text-wrapper">
+					<?= $page->text()->kt() ?>
+				</div>
+			</div>
 		</div>
   </main>
 
