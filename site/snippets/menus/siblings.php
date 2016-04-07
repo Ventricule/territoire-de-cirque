@@ -1,3 +1,4 @@
+<?php if( $page->depth() > 1) : ?>
 <div id="menu-second" class="h3">
 	<ul>
 			<?php if( $page->depth() > 2) : ?>
@@ -20,3 +21,4 @@
 	</ul>
 	<div class="exergue"><?= $page->exergue()->kt() ?></div>
 </div>
+<?php endif ?>

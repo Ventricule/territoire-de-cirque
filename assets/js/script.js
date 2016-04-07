@@ -173,7 +173,7 @@ $(document).ready( function () {
 							return 'Espaces chapiteau';
 							break;
 						case 'polenationnal':
-							return 'Pôles nationnaux';
+							return 'Pôles nationaux';
 							break;
 						case 'festival':
 							return 'Festivals';
@@ -255,6 +255,56 @@ $(document).ready( function () {
 		}, 300)
 		
 	});
+	
+	function search(form) {
+		var $this = $(form); // L'objet jQuery du formulaire
+ 
+		// Envoi de la requête HTTP en mode asynchrone
+		$.ajax({
+				url: $this.attr('action'), // Le nom du fichier indiqué dans le formulaire
+				type: $this.attr('method'), // La méthode indiquée dans le formulaire (get ou post)
+				data: $this.serialize(), // Je sérialise les données (j'envoie toutes les valeurs présentes dans le formulaire)
+				success: function(html) { // Je récupère la réponse du fichier PHP
+					console.log($(html).find('#folder-content'));
+					$('#folder-header').html( $(html).find('#folder-header').children() ); 
+					$('#folder-content').html( $(html).find('#folder-content').children() ); 
+				}
+		});
+	}
+	$('#searchbar form').on('submit change', function(e) {
+		e.preventDefault(); // J'empêche le comportement par défaut du navigateur, c-à-d de soumettre le formulaire
+		search(this);
+	});
+	$('#searchbar input').on('keyup', function() {
+		if($(this).val().length > 2 || $(this).val().length == 0) {
+			search( $(this).closest('form') );
+		}
+	});
+	$(document).on('click', '#folder-header .close', function() {
+		var form = $('#searchbar form')[0];
+		form.reset();
+		search( form );
+		//location.reload();
+	});
+	
+	
+	/* Maintenance page
+	----------------------------------------- */
+	if( $('body.page-maintenance').size() ) {
+		var windowW = $(window).width(),
+		    windowH = $(window).height(),
+				dotsNum = windowW * windowH / 100000;
+		console.log(windowH);
+			console.log(windowW);
+		for(var i = 0 ; i < dotsNum  ; i++) {
+			if (i==1) {
+				$('#dots').append( $('<div>').css({ top: Math.random() * windowH , left: Math.random() * windowW, backgroundColor: 'rgb(33, 255, 99)' }) ) ;
+			} else {
+				$('#dots').append( $('<div>').css({ top: Math.random() * windowH , left: Math.random() * windowW }) ) ;
+			}
+			
+		}
+	}
 
 	
 });

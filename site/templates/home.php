@@ -5,10 +5,10 @@
 		<?php snippet('menus/siblings') ?>
 	</div>
 
-  <main class="main" role="main">
-		
+	<main class="main" role="main">
+
 		<?= $page->text()->kt() ?>
-  </main>
+	</main>
 
 	<div id="right-side">
 		<?php snippet('modules/gallery') ?>

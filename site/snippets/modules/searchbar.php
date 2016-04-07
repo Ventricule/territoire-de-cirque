@@ -1,25 +1,26 @@
 <div id="searchbar">
-	<form>
-		<input type="search" name="q" value="" placeholder="Rechercher">
+	<form action="<?= $page->url() ?>" method="get">
+		<input type="search" name="q" value="" placeholder="Rechercher" autocomplete="off">
 		<div class="btn-more"><span>+</span> <span>Recherche avancée</span></div>
+		<input type="hidden" name="directory" value="<?= $page->uri() ?>">
 		<div class="more">
 			<div class="here">
 				<input type="checkbox" name="here" id="here" /> <label for="here">Dans ce<br>dossier</label>
 			</div>
-			<select name="tags">
-				<option label="Tags">Mot-clé</option>
-					<?php foreach (page('ressources')->index()->pluck('tags', ',', true) as $tags) : ?>
-				<option value="<?= $tags ?>"><?= $tags ?></option>
+			<select name="tag">
+				<option value='' selected>Mot-clé</option>
+				<?php foreach (page('ressources')->index()->pluck('tags', ',', true) as $tags) : ?>
+					<option value="<?= $tags ?>"><?= $tags ?></option>
 				<?php endforeach ?>
 			</select>
 			<select name="author">
-				<option label="Auteur">Auteur</option>
+				<option value=''>Auteur</option>
 				<?php foreach (page('ressources')->index()->pluck('author', ',', true) as $author) : ?>
 					<option value="<?= html($author) ?>"><?= html($author) ?></option>
 				<?php endforeach ?>
 			</select>
 			<select name="member">
-				<option label="Membre">Membre</option>
+				<option value=''>Membre</option>
 					<?php foreach (page('ressources')->index()->pluck('member', ',', true) as $member) : ?>
 				<option value="<?= $member ?>"><?= $member ?></option>
 				<?php endforeach ?>

@@ -1,3 +1,5 @@
+<?php if ( $page->uid() != 'maintenance' && c::get('maintenance') && ! $user = $site->user() ) go('maintenance') ; ?>
+<?php if ( $page->uid() == 'maintenance' && !c::get('maintenance') ) go('/') ; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

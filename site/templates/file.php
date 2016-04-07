@@ -7,10 +7,12 @@
 
   <main class="main wide" role="main">
 		
-		<div class="cover">
-			<figure style="<?= (string)$page->une() ? 'background-image:url(' . $page->file($page->une())->resize(1000)->url() . ')' : '' ; ?>">
-			</figure>
-		</div>
+		<?php if ( (string)$page->une() ) : ?>
+			<div class="cover">
+				<figure style="<?= $page->file($page->une()) ? 'background-image:url(' . $page->file($page->une())->resize(1000)->url() . ')' : '' ; ?>">
+				</figure>
+			</div>
+		<?php endif ?>
 		<div class="file-content">
 			<h1 class="main-title"><?= $page->title(); ?></h1>
 			<div class="h3 introduction"><?= $page->introduction()->kt() ?></div>

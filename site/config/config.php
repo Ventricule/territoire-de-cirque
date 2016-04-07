@@ -29,6 +29,16 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
+c::set('panel.widgets', array(
+  'pages'    		=> true,
+  'site'     		=> true,
+  'account'  		=> true,
+  'history'  		=> true,
+	'astuces'			=> true,
+));
+
+c::set('maintenance', true);
+
 c::set('languages', array(
 	array(
     'code'    => 'fr',
@@ -90,7 +100,7 @@ function id2title($id) {
 			return 'Espace chapiteau';
 			break;
 		case 'polenationnal':
-			return 'Pôle nationnal';
+			return 'Pôle national';
 			break;
 		case 'festival':
 			return 'Festival';
