@@ -12,7 +12,7 @@
 		?>
 		<div class="slide-wrapper">
 			<figure class="slide">
-				<img src="<?= $thumb->url() ?>" width="<?= $thumb->width() ?>" height="<?= $thumb->height() ?>">
+				<img class='gallery-img' src="<?= $thumb->url() ?>" width="<?= $thumb->width() ?>" height="<?= $thumb->height() ?>">
 			</figure>
 			<div class="caption"><?= $file->caption() ?></div>
 		</div>
