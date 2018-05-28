@@ -1,0 +1,351 @@
+/* Page membres : Carte
+-------------------------------------------------- */
+
+.template-membres main {}
+
+#map-membres {
+	width: 100%;
+	height: calc( 100vh - 16rem);
+	margin-bottom: 0rem;
+	background-image: url(../../images/diffusion.png);
+	overflow: visible;
+}
+
+#map-membres>figure {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 9;
+	margin: 0px;
+	border: 0.25rem solid;
+	color:  #fff;
+	border-right: 0;
+	border-bottom: 0;
+}
+
+#map-membres>figure img {
+	display: block;
+	cursor: pointer;
+}
+
+/* filters */
+
+.filter-group {
+	font: 14px/20px 'whoismono', Arial, Helvetica, sans-serif;
+	margin-bottom: 2rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.filter-group input[type=checkbox] {
+	display: none;
+}
+
+.filter-group input[type=checkbox] + label {
+	cursor: pointer;
+	padding: .5rem .7rem .4rem .5rem;
+	display: block;
+	float: left;
+	border: 1px solid;
+	text-align: center;
+	margin: 0 -1px -1px 0;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.filter-group input[type=checkbox] + label span {
+	/*display: inline-block;
+	width: 100%;*/
+}
+
+.filter-group input[type=checkbox] + label:hover,
+.filter-group input[type=checkbox]:checked + label {
+	/*background-color: #eee;*/
+	background-image: url(../../images/diffusion50.png);
+}
+
+.filter-group input[type=checkbox]:checked + label:before {
+	content: '✔';
+	margin-right: 5px;
+}
+
+
+/* Pop-ups */
+
+.mapboxgl-popup {
+	z-index: 9;
+}
+
+.mapboxgl-popup-content {
+	position: relative;
+	background: #fff;
+	border-radius: 0px;
+	border: 1px solid;
+	pointer-events: auto;
+	max-width: 270px;
+	padding: 0;
+}
+
+.mapboxgl-popup-content .titraille {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.mapboxgl-popup-content .titraille figure {
+	width: 3rem;
+	margin: .5rem 1rem .5rem 1rem;
+	min-height: 3rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.mapboxgl-popup-content .titraille h2 {
+	border: 0px none;
+	padding: 1rem 0.5rem;
+	border-left: 1px solid;
+	margin-left: -1px;
+	min-height: 4rem;
+}
+
+.mapboxgl-popup-content h3 {
+	padding: .5rem 1rem;
+	border-bottom: 1px solid;
+}
+
+.mapboxgl-popup-content h3:last-child {
+	border: 0;
+}
+
+.mapboxgl-popup-content .membre-more {
+	background-color: #001abb;
+	color: #FFF;
+	text-align: center;
+}
+
+.mapboxgl-popup-content .membre-nom {
+	background-image: url(../../images/diffusion50.png);
+}
+
+.mapboxgl-popup-content h2,
+.mapboxgl-popup-content h3 {
+	text-align: left;
+	font-size: 1rem;
+	line-height: 1.3rem;
+	margin: 0;
+}
+
+.mapboxgl-popup-content h2 {
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+}
+
+.mapboxgl-popup-content .ville {
+	position: absolute;
+	margin: 0;
+	bottom: 1rem;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.mapboxgl-popup-content figure {}
+
+.mapboxgl-popup-content figure img {
+	-webkit-filter: url('../../images/filters.svg#blue');
+	filter: url('../../images/filters.svg#blue');
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip {
+	border-top-color: #001abb;
+	-webkit-filter: drop-shadow(0px 2px 0px #fff);
+	filter: drop-shadow(0px 2px 0px #fff);
+}
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+	border-bottom-color: #001abb;
+	-webkit-filter: drop-shadow(0px -2px 0px #fff);
+	filter: drop-shadow(0px -2px 0px #fff);
+}
+
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+	border-right-color: #001abb;
+	-webkit-filter: drop-shadow(-2px 0px 0px #fff);
+	filter: drop-shadow(-2px 0px 0px #fff);
+}
+
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+	border-left-color: #001abb;
+	-webkit-filter: drop-shadow(2px 0px 0px #fff);
+	filter: drop-shadow(2px 0px 0px #fff);
+}
+
+.mapboxgl-popup-close-button {
+	color: #001abb;
+	top: .2rem;
+	right: .2rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 100%;
+}
+
+.mapboxgl-popup-close-button:hover {
+	background-color: #eee;
+}
+
+
+/* Page Membres : Liste
+-------------------------------------------------- */
+
+#liste-membres {
+	overflow: hidden;
+}
+
+#liste-membres ul {
+	list-style-type: none;
+	margin-right: -5%;
+}
+
+#liste-membres ul li {
+	border: 1px solid;
+	float: left;
+	padding-top: 30%;
+	width: 20%;
+	margin-right: 5%;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+#liste-membres ul li .wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 1rem;
+}
+
+#liste-membres ul li.hide {
+	opacity: .2;
+}
+
+#liste-membres ul li h2,
+#liste-membres ul li h3,
+#liste-membres ul li h4 {
+	text-align: left;
+}
+
+#liste-membres ul li h2 {
+	margin-bottom: 1rem;
+}
+
+#liste-membres ul li h3 {
+	font-size: 1rem;
+	line-height: 1.3rem;
+}
+
+#liste-membres .membre-activites,
+#liste-membres .membre-more {
+	display: none;
+}
+
+#liste-membres .membre-ville {
+	position: absolute;
+	bottom: 0.25rem;
+	margin: 0px;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	font-size: 0.85rem;
+}
+
+#liste-membres ul li .ville {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	padding: .2rem 1rem;
+	color: #FF8236;
+}
+
+.titraille figure {
+	height: 50%;
+	position: relative;
+	-webkit-filter: url('../../images/filters.svg#blue');
+	filter: url('../../images/filters.svg#blue');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 5rem;
+}
+
+#liste-membres ul li:hover figure {
+	-webkit-filter: none;
+	filter: none;
+}
+
+.titraille figure.placeholder {
+	background-image: url("../../images/diffusion.png");
+	background-size: initial;
+}
+
+@media screen and (max-width: 1450px) {
+	#liste-membres ul {
+		margin-right: -3.3%;
+	}
+	#liste-membres ul li {
+		width: 30%;
+		margin-right: 3.3%;
+		padding-top: 45%;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	#liste-membres ul {
+		margin-right: -5%;
+	}
+	#liste-membres ul li {
+		width: 45%;
+		margin-right: 5%;
+		padding-top: 70%;
+	}
+	.filter-group {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#liste-membres ul {
+		margin-right: 0;
+	}
+	#liste-membres ul li {
+		width: 100%;
+		padding: 0;
+	}
+	#liste-membres ul li .wrapper {
+		position: relative;
+	}
+	.filter-group {
+		display: none;
+	}
+	#map-membres {
+    height: 20rem;
+    margin-bottom: 2rem;
+	}
+}

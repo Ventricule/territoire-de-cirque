@@ -1,0 +1,267 @@
+// main: ../main.less
+
+.comments {
+	max-width: 47rem;
+	position: relative;
+}
+.comments h2 {
+	text-align: left;
+}
+.comments article {
+	border-top: 1px solid #ff8484;
+	padding: 3rem 1rem .5rem 1rem;
+	margin-bottom: 2rem;
+	position: relative;
+}
+.comments article.preview {
+    border: 0px solid #ff8484;
+    background-color: #ffefef;
+    border-radius: .5rem;
+}
+.comments article h3 {
+	position: absolute;
+	top: .5rem;
+	left: 1rem;
+	font-weight: bold;
+	font-size: .9rem;
+	font-family: 'karla', sans-serif;
+	color: #ff8484;
+}
+.comments article .comment-info {
+	font-family: 'whoismono', monospace;
+	font-size: 0.8rem;
+	position: absolute;
+	top: .5rem;
+	right: 1rem;
+	color: #ff8484;
+}
+.comments article > p,
+.comments blockquote {
+	font-size: 1.2rem;
+	line-height: 130%;
+}
+.comments blockquote {
+	border-left: solid .25rem #ff8484;
+	padding-left: 1rem;
+	margin-bottom: 1rem;
+}
+.comments article .attachment li figure {
+	opacity: .6;
+}
+.comments article .attachment figure:hover {
+	opacity: 1;
+}
+
+// form
+.comments .comment-form {
+}
+.comments input, .comments textarea {
+	width: 100%;
+	border: 1px solid #001ABB;
+}
+
+.comments input[type=button],
+.comments input[type=submit] {
+	width: inherit;
+	min-width: 10rem;
+	margin-left: .5rem;
+	float: right;
+}
+
+.comments .submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.comments label,
+.comments input#name,
+.comments input#website,
+.comments input#email {
+	display: none;
+}
+
+.comments #message {
+	display: none;
+}
+
+.comments .editable {
+	min-height: 8rem;
+	color: #001ABB;
+	border: 1px solid #001ABB;
+	padding: .5rem;
+	padding-bottom: 1.5rem;
+	font-family: 'karla';
+	font-size: 1.2rem;
+	line-height: 120%;
+	margin-bottom: .5rem;
+}
+
+.medium-editor-placeholder:after {
+    color: #8d9dff !important;
+	font-style: normal;
+}
+
+.comments .thank-you {
+	text-align: center;
+	color: #ff8484;
+}
+
+.comments .delete i {
+	cursor: pointer;
+}
+.comments .delete span {
+	display: none;
+}
+.comments .delete.active span {
+	display: inline-block;
+}
+.comments > .delete {
+	position: absolute;
+	top: 0;
+	right: 1rem;
+	font-size: .9rem;
+	line-height: 1.5rem;
+	opacity: .5;
+}
+
+
+// File selector
+.attachment {
+	position: relative;
+}
+.attachment li, 
+.attachment ul {
+	list-style-type: none;
+	margin: 0;
+}
+.attachment > ul {
+	margin: 0;
+	position: relative;
+}
+.main .attachment > p {
+	opacity: .5;
+	font-family: 'whoismono', monospace;
+	font-size: .85rem;
+	position: absolute;
+	left: .75rem;
+	bottom: 100%;
+	margin-bottom: .75rem;
+}
+.attachment .selected-documents {
+	width: 100%;
+	clear: both;
+	background-image: url(../images/diffusion.png);
+	margin: 0;
+	display: none;
+	margin-bottom: .5rem;
+}
+.attachment .selected-documents > div > p {
+	display: inline-block;
+	margin: .5rem;
+	background-color: #fff;
+	padding: .25rem .5rem;
+	clear: both;
+	float: left;
+}
+.attachment .selected-documents .item {
+	padding: 0;
+}
+
+.attachment .selected-documents .item figure {
+	margin: 0 .5rem .5rem .5rem;
+}
+.attachment .selected-documents .item figure:hover {
+	opacity: .5;
+	transform: translateY(.25rem);
+}
+
+.attachment>ul>li {
+	display: inline-block;
+}
+.attachment li ul {
+	width: 100%;
+}
+.attachment .item {
+	width: 33.3%;
+	float: left;
+	padding: 0;
+}
+.attachment ul .item:nth-child(3n + 1) {
+	padding-right: .5rem;
+}
+.attachment ul .item:nth-child(3n + 2) {
+	padding: 0 .5rem;
+}
+.attachment ul .item:nth-child(3n + 3) {
+	padding-left: .5rem;
+}
+
+.attachment ul > li > span {
+	display: block;
+	margin-bottom: .5rem;
+	cursor: pointer;
+}
+
+.attachment ul > li > ul {
+	display: none;
+	padding-left: 1rem;
+}
+
+.attachment ul > li.open > ul {
+	display: block;
+}
+
+.attachment ul > li > span i {
+	display: none;
+}
+.attachment ul > li:not(.open) > span i:first-child,
+.attachment ul > li.open > span i:last-child {
+	display: inline-block;
+}
+
+input[type=submit],
+.attachment > ul > li > span {
+	border: 1px solid;
+	display: inline-block;
+	padding: .2rem .75rem;
+	border-radius: 1rem;
+	line-height: 1rem;
+}
+
+.attachment figure {
+	margin-bottom: .5rem;
+	border: 1px solid;
+	height: 66px;
+	position: relative;
+	cursor: pointer;
+	background-color: #fff;
+	transition: all .2s;
+}
+
+.docs figure:hover {
+	transform: translateY(-4px);
+}
+
+.attachment figure .extension {
+	display: block;
+	width: 64px;
+	height: 64px;
+	color: #fff;
+	background-color: #001ABB;
+}
+.attachment figure .extension,
+.attachment figure img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.attachment figure .extension {
+	text-align: center;
+	padding-top: 36px;
+}
+
+.attachment figcaption {
+	margin-left: 64px;
+	padding: 1rem;
+}

@@ -1,0 +1,18 @@
+title: Documents partagés
+pages: false
+options:
+	preview: false
+	url: false
+	template: false
+	delete: true
+	status: false
+files: 
+  sortable: true
+	size: 209715200
+fields:
+	documents:
+		label: Documents
+		type: fileslist
+	title:
+		label: Nom du dossier
+		type: text

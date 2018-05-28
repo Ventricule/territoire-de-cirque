@@ -1,0 +1,78 @@
+/* Ressources : Folder Header
+-------------------------------------------------- */
+
+#folder-header figure {
+	background-position: center center;
+	background-size: cover;
+	height: 24rem;
+	position: relative;
+}
+#folder-header figcaption {
+	margin: 0;
+	left: 100%;
+	position: absolute;
+	bottom: 100%;
+	width: 33%;
+	transform: rotate(90deg);
+	transform-origin: 0 100%;
+	opacity: .5;
+	font-size: .7rem;
+}
+
+#folder-header {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-bottom: 4rem;
+}
+
+#folder-header figure {
+	width: 100%;
+	margin: 0;
+}
+
+#folder-header .titraille {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	margin-top: 1rem;
+	padding: 0 2rem;
+	border-bottom: 1px solid;
+	position: relative;
+}
+
+#folder-header .titraille .close {
+	position: absolute;
+	top: 0px;
+	right: 1.3rem;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+#folder-header .edito {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding-left: 2rem;
+	margin-top: 1rem;
+}
+
+#folder-header .edito p:last-child {
+	margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+	#folder-header {
+    display: block;
+	}
+	#folder-header .edito {
+		padding: 0;
+	}
+}

@@ -1,0 +1,8 @@
+fields: 
+	pagemembre: 
+		label: Page membre
+		type: select
+		options: query
+		query:
+			page: membres/les-membres
+			fetch: children

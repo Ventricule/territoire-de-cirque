@@ -1,0 +1,6 @@
+Un nouveau message a été posté dans la discussion « {{ page.title }} » ({{ page.url }}).
+
+Auteur: {{ comment.user.name }}
+
+Message:
+{{ comment.message }}

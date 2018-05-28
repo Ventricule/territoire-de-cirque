@@ -1,0 +1,336 @@
+// main: ../main.less
+
+/* Menu Mobile
+-------------------------------------------------- */
+.toggle-button {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: #001abb;
+    width: 4rem;
+    color: #fff;
+    border-radius: 50%;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+	z-index: 99999;
+	display: none;
+	cursor: pointer;
+}
+#main-menu {
+	display: none;
+}
+
+
+/* Navigation
+-------------------------------------------------- */
+#menu-wrapper {
+	position: absolute;
+	max-width: 1600px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.menu li {
+	text-transform: uppercase;
+	line-height: 1.6rem;
+}
+
+.menu > li > a {
+	border: 0;
+	padding: 3px 0px 2px;
+	background-color: #fff;
+}
+
+.menu > li > a.active {
+	border: .25rem solid;
+	padding: 3px 9px 2px;
+}
+
+.menu .lang-switcher a {
+	border: 0px none;
+}
+
+.menu {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #FFF;
+	z-index: 999;
+	height: 4rem;
+	padding: 1.3rem 2rem 1.3rem 0;
+	left: 25%;
+	max-width: 1600px;
+	margin: auto;
+	margin-left: 2rem;
+}
+#menu-wrapper .line {
+	position: absolute;
+	top: 4rem;
+	right: 2rem;
+	left: 25%;
+	margin-left: 2rem;
+	height: 1px;
+	background-color: #001abb;
+	z-index: 9999;
+}
+.menu > li {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-webkit-flex-shrink: 1;
+	-ms-flex-negative: 1;
+	flex-shrink: 1;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	list-style-type: none;
+}
+.menu > li:last-child a {
+	border-radius: 100%;
+}
+.menu > li:last-child {
+	-webkit-box-flex: 0;
+	-webkit-flex-grow: 0;
+	-ms-flex-positive: 0;
+	flex-grow: 0;
+	width: 1.4rem;
+}
+	
+/* Menu Plus
+-------------------------------------------------- */
+#menu-second {
+	position: absolute;
+	top: 8rem;
+	bottom: 2rem;
+	overflow: auto;
+	margin: 0;
+	right: 0;
+	left: 0;
+	padding: 0 2rem;
+	width: 25%;
+	pointer-events: all;
+}
+#menu-second ul {
+	list-style-type: none;
+	position: relative;
+	border-bottom: 1px solid;
+}
+#menu-second li {
+	padding: .75rem 2rem .75rem 0;
+	background-color: #fff;
+}
+#menu-second li:first-child {
+	border-top: 1px solid;
+}
+#menu-second li a {
+	border: 0;
+}
+#menu-second li.active a {
+	border: 0;
+	border-bottom: .25rem solid;
+}
+#menu-second .parent {
+	text-align: center;
+	border: 0;
+	border-bottom: 1px solid;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-left: 3rem;
+	transition: opacity .2s;
+}
+#menu-second .parent a, #menu-second .parent span {
+	white-space: nowrap;
+}
+#menu-second .retour {
+	text-indent: -99999px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 2rem;
+}
+#menu-second .retour .icon {
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	height: 0;
+	width: 19px;
+	height: 19px;
+	background-image: url(../images/fleche.svg);
+	transform: rotate(90deg);
+	margin-top: -9px;
+}
+/*#menu-second .retour .icon:after,
+#menu-second .retour .icon:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+#menu-second .retour .icon:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: .75rem;
+	margin-top: -.75rem;
+}
+#menu-second .retour .icon:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #001abb;
+	border-width: calc(.75rem + 1px);
+	margin-top: calc(-.75rem - 1px);
+}*/
+.exergue {
+	margin: 1rem 0;
+	font-family: 'karla';
+	font-size: .9rem;
+	line-height: 1.1rem;
+}
+
+/* Menu Plus
+-------------------------------------------------- */
+
+.btn-menu-plus img {
+	-webkit-transition: -webkit-transform .2s;
+	transition: -webkit-transform .2s;
+	transition: transform .2s;
+	transition: transform .2s, -webkit-transform .2s;
+}
+
+.btn-menu-plus.close-plus img {
+	-webkit-transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg);
+}
+
+#menu-plus {
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+	position: absolute;
+	top: 4rem;
+	left: 25%;
+	right: 0;
+	z-index: 99999;
+	background-color: #fff;
+	display: none;
+	padding: 1rem 0rem;
+	max-width: 1600px;
+	margin: auto;
+	margin-left: 2rem;s
+	padding-right: 2rem;
+}
+
+#menu-plus .columns {
+	margin: 0;
+}
+#menu-plus .column a {
+	display: block;
+} 
+#menu-plus .column input[type=submit] {
+	margin: 0;
+}
+
+#menu-plus .column {
+	text-align: center;
+	margin: 2rem 0;
+}
+
+#menu-plus .column img {
+	height: 7.5rem;
+	display: block;
+	margin: auto;
+}
+
+#menu-plus input:not([type=submit]) {
+	width: 75%;
+	text-align: center;
+}
+
+#menu-plus .btn-acces-membre {
+	border-radius: 50%;
+	width: 6rem;
+	height: 6rem;
+	display: block;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 100%;
+	left: 66%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#menu-plus .btn-acces-membre a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#menu-plus .btn-acces-membre a span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#menu-plus .btn-newsletter {
+    border: 1px solid;
+    border-radius: 50%;
+    height: 7rem;
+    line-height: 7rem;
+    width: 16rem;
+    margin: auto;
+    transform: rotate(-10deg);
+}
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+	#main-menu-not-mobile, #main-menu {
+		display: none;
+	}
+	#main-menu.mm-menu {
+      display: block;
+   }
+	.toggle-button {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.menu > li.btn-espace-membre {
+    position: absolute;
+    right: 2rem;
+    font-size: .85rem;
+    top: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 1450px) {
+	#menu-second li {
+		padding: .75rem 0;
+	}
+}

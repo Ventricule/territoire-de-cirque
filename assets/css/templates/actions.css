@@ -1,0 +1,41 @@
+.template-actions .articles {
+	margin-right: -2rem;
+}
+
+.template-actions .actions-header {
+	padding-bottom: 2rem;
+}
+
+.template-actions .actions-header .subtitle h4 {
+	margin: 0;
+}
+
+.template-actions .articles .article-wrapper {
+	width: 33.3%;
+	float: left;
+	padding-bottom: 33.3%;
+	position: relative;
+}
+
+.template-actions .articles .article {
+	position: absolute;
+	top: 0;
+	right: 4rem;
+	bottom: 4rem;
+	left: 0;
+	border: 1px solid;
+}
+
+.template-actions .articles .article figure {
+	height: 66%;
+	background-size: cover;
+	background-position: center;
+}
+
+.template-actions .articles .article figure.placeholder {
+	background-size: auto;
+}
+
+.template-actions .articles .article .text {
+	padding: 0 1rem;
+}

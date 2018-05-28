@@ -1,0 +1,30 @@
+title: Actions
+pages:
+	template: action
+files:
+	sortable: true
+	fields:
+		caption:
+			label: Légende
+			type: textarea
+fields:
+  title:
+    label: Titre
+    type:  text
+	exergue:
+		label: Exergue
+		type: textarea
+		buttons: false
+	subtitle:
+		label: Sous-titre
+		type: textarea
+	text:
+		label: Texte
+		type: textarea
+	gallery:
+		label: Galerie
+		type: selector
+		mode: multiple
+		sort: sort
+		types:
+			- image

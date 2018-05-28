@@ -1,0 +1,251 @@
+// main: ../main.less
+
+/* Colonnes dans le template
+-------------------------------------------------- */
+
+.grille {
+	overflow: hidden;
+}
+
+.grille .row {
+	margin-right: -4rem;
+}
+
+.grille .col {
+	float: left;
+	padding-right: 4rem;
+}
+
+.col-1-4 {
+	width: 25%;
+}
+
+.col-2-4 {
+	width: 50%;
+}
+
+.col-3-4 {
+	width: 75%;
+}
+
+
+/* Colonnes dans le texte
+-------------------------------------------------- */
+
+.columns {
+	margin-right: -2rem;
+	margin-bottom: 1rem;
+	clear: both;
+}
+
+.columns .column {
+	display: block;
+	float: left;
+	padding-right: 2rem;
+	margin-bottom: 2rem;
+}
+
+.columns-1 .column {
+	width: 100%;
+}
+
+.columns-2 .column {
+	width: 50%;
+}
+
+.columns-3 .column {
+	width: 33.33%;
+}
+
+.columns-4 .column {
+	width: 25%;
+}
+
+.columns-5 .column {
+	width: 20%;
+}
+
+/* Structure
+-------------------------------------------------- */
+
+#left-side {
+	max-width: 1600px;
+	position: fixed;
+	bottom: 0rem;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	pointer-events: none;
+}
+
+main {
+	padding: 8rem 2rem 2rem;
+	width: 50%;
+	margin-left: 25%;
+	position: relative;
+	min-height: 100vh;
+}
+
+main.wide {
+	width: 75%;
+}
+
+main.superwide {
+	width: 100%;
+	margin: 0;
+}
+
+#right-side {
+	max-width: 1600px;
+	position: fixed;
+	bottom: 0rem;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	pointer-events: none;
+	background-color: transparent;
+	-webkit-transition: background-color .4s;
+	transition: background-color .4s;
+	overflow-y: hidden;
+}
+
+#right-side .gallery {
+	overflow: hidden;
+	width: 25%;
+	float: right;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	pointer-events: all;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+#right-side:hover .gallery {}
+
+#right-side.open {
+	background-color: rgba(255, 255, 255, .9);
+	z-index: 9999;
+	overflow-y: auto;
+}
+
+#right-side.open .gallery {
+	width: 100%;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+.footer {
+	margin-left: 25%;
+	position: relative;
+	background-color: #fff;
+}
+
+.footer .footer-content {
+	margin: 0 2rem 0 2rem;
+	padding: .5rem 0 .5rem 0;
+	border-top: 1px solid;
+}
+
+.copyright {
+	float: right;
+	text-align: right;
+	margin-bottom: 2rem;
+}
+
+.colophon {
+	float: left;
+	margin-bottom: 2rem;
+}
+
+/* Header
+-------------------------------------------------- */
+
+#logo-tdc {
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 25%;
+	padding: 0 2rem;
+	height: 8rem;
+	overflow: hidden;
+	mix-blend-mode: multiply;
+}
+
+#logo-tdc img {
+	display: inline-block;
+	width: 15.1rem;
+	margin-top: -.25rem;
+}
+
+#logo-tdc a {
+	text-decoration: none;
+	border: none;
+	display: block;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+	main {
+    width: 66.6%;
+    margin-left: 0;
+	}
+	#logo-tdc {
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 15rem;
+	}
+	#logo-tdc a {
+		margin-top: .5rem;
+	}
+	
+	main.wide {
+    width: 100%;
+    margin-left: 0;
+	}
+	#left-side {
+		display: none;
+	}
+	#right-side .gallery {
+    width: 33%;
+	}
+	.footer {
+    margin-left: 0%;
+	}
+	.footer .footer-content {
+    margin: 0;
+    padding: .5rem 2rem;
+    border-top: 1px solid;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	main {
+    width: 100%;
+    margin-left: 0;
+	}
+	main.wide {
+    width: 100%;
+    margin-left: 0;
+	}
+	#left-side, #right-side {
+		display: none;
+	}
+	
+	.columns .column {
+		width: 100% !important;
+	}
+	
+	.footer {
+    margin-left: 0%;
+	}
+	.copyright {
+		float: left;
+		text-align: left;
+	}
+}

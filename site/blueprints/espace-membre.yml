@@ -1,0 +1,30 @@
+title: Panel intégré
+pages: false
+files: false
+fields:
+	title:
+		label: Titre
+		type: text
+	folderUri:
+		label: URL de la page à administrer
+		type: text
+		width: 1/2
+	subpages:
+		label: Liste
+		type: checkbox
+		width: 1/4
+	navigate:
+		label: Sous-dossier
+		type: checkbox
+		width: 1/4
+	restrictedTo:
+		label: Rôles autorisés à voir la page
+		columns: 3
+		type: roles
+	message:
+		label: Message aux visiteurs non autorisés
+		type: textarea
+	exergue:
+		label: Exergue
+		type: textarea
+		buttons: false

@@ -1,0 +1,75 @@
+/* ACTIONS
+-------------------------------------------------- */
+
+#actions {
+	margin-right: -4rem;
+	margin-bottom: 4rem;
+	margin-top: -2rem;
+}
+
+#actions .action {
+	width: 50%;
+	float: left;
+	padding-right: 4rem;
+}
+
+.modalites {
+    border: 1px solid;
+    padding: 2rem 4rem;
+    width: 50%;
+    margin: auto;
+}
+
+#actions img {
+	padding: 0 12%;
+}
+
+#actions .action h4 {
+	margin-bottom: 0;
+}
+
+#actions .action .sous-titres {
+	text-align: center;
+}
+
+#actions .action a {
+	border: 0;
+}
+
+#actions .action .exemples {
+	display: none;
+}
+
+#actions .modalites {
+	padding-top: 4rem;
+	padding-right: 4rem;
+	text-align: center;
+	float: none;
+	clear: both;
+}
+
+#actions .modalites h2 {
+	padding-bottom: 1.5rem;
+	background-image: url("../../images/ligne.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100% 1rem;
+	display: inline-block;
+	margin: auto;
+}
+
+@media screen and (max-width: 980px) {
+	.modalites {
+		width: 66%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#actions .action {
+    width: 100%;
+	}
+	.modalites {
+		width: 100%;
+		padding: 2rem;
+	}
+}

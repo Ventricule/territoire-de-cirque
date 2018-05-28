@@ -1,0 +1,33 @@
+title: Action
+pages: false
+files:
+	sortable: true
+	fields:
+		caption:
+			label: Légende
+			type: textarea
+fields:
+	title:
+		label: Titre
+		type:  text
+		width: 3/4
+	date:
+		label: Publication
+		type: date
+		default: today
+		format: DD.MM.YYYY
+		width: 1/4
+	chapo:
+		label: Chapo
+		type: textarea
+		buttons: false
+	text:
+		label: Texte
+		type:  wysiwyg
+	gallery:
+		label: Galerie
+		type: selector
+		mode: multiple
+		sort: sort
+		types:
+			- image

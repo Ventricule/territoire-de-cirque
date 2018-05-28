@@ -1,0 +1,305 @@
+// main: ../main.less
+
+/* Source Sans Pro
+-------------------------------------------------- */
+
+@font-face {
+	font-family: 'karla';
+	src: url('../fonts/karmilla-regular-015-webfont.eot');
+	src: url('../fonts/karmilla-regular-015-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/karmilla-regular-015-webfont.woff2') format('woff2'), url('../fonts/karmilla-regular-015-webfont.woff') format('woff'), url('../fonts/karmilla-regular-015-webfont.ttf') format('truetype'), url('../fonts/karmilla-regular-015-webfont.svg#karmillaregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'karla';
+	src: url('../fonts/karmilla-bold-015-webfont.eot');
+	src: url('../fonts/karmilla-bold-015-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/karmilla-bold-015-webfont.woff2') format('woff2'), url('../fonts/karmilla-bold-015-webfont.woff') format('woff'), url('../fonts/karmilla-bold-015-webfont.ttf') format('truetype'), url('../fonts/karmilla-bold-015-webfont.svg#karmillabold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'karla';
+	src: url('../fonts/karla-italic-webfont.eot');
+	src: url('../fonts/karla-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/karla-italic-webfont.woff2') format('woff2'), url('../fonts/karla-italic-webfont.woff') format('woff'), url('../fonts/karla-italic-webfont.ttf') format('truetype'), url('../fonts/karla-italic-webfont.svg#karlaitalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'karla';
+	src: url('../fonts/karla-bolditalic-webfont.eot');
+	src: url('../fonts/karla-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/karla-bolditalic-webfont.woff2') format('woff2'), url('../fonts/karla-bolditalic-webfont.woff') format('woff'), url('../fonts/karla-bolditalic-webfont.ttf') format('truetype'), url('../fonts/karla-bolditalic-webfont.svg#karlabolditalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'whoismono';
+	src: url('../fonts/whois-mono.eot');
+	src: url('../fonts/whois-mono.eot?#iefix') format('embedded-opentype'), url('../fonts/whois-mono.woff') format('woff'), url('../fonts/whois-mono.ttf') format('truetype'), url('../fonts/whois-mono.svg#whoismono') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rubik';
+	src: url('../fonts/RUBIK-BOLD.TTF');
+	src: url('../fonts/RUBIK-BOLD.TTF') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Links
+-------------------------------------------------- */
+
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none;
+}
+
+
+/* Characters styles
+-------------------------------------------------- */
+
+.nav-font {
+	font-family: "whoismono";
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	letter-spacing: .5px;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+	font-family: "rubik", sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+h2,
+.h2 {
+	text-align: center;
+}
+
+h3,
+.h3,
+h4,
+.h4 {
+	font-family: "whoismono", monospace;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
+	font-weight: normal;
+}
+
+h4,
+.h4 {
+	text-align: center;
+}
+
+.small {
+	font-size: 0.85rem;
+	line-height: 1rem;
+}
+
+.emphase {
+	font-family: "whoismono", monospace;
+	font-size: 1rem;
+	line-height: 1.3rem;
+}
+
+.infos {
+	font-family: "whoismono", monospace;
+	font-size: .85rem;
+	line-height: 1.1rem;
+}
+
+.secondaire em {
+	font-style: normal;
+	text-decoration: underline;
+}
+
+.sans-serif {
+	font-family: sans-serif;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+	color: inherit;
+	border: 0 !important;
+}
+
+.text-wrapper blockquote {
+	padding-left: 1.75rem;
+	border-left: 0.25rem solid #fffd53;
+}
+
+.text-wrapper ul li {
+	position: relative;
+	padding-left: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.text-wrapper ul li::before {
+	content: ' ';
+	background: #001abb;
+	width: 1rem;
+	height: .5rem;
+	position: absolute;
+	top: .4rem;
+	left: 0;
+	-webkit-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+.text-wrapper ul li:nth-child(2n+0)::before {
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
+.text-wrapper ul li:nth-child(3n+0)::before {
+	-webkit-transform: rotate(70deg);
+	transform: rotate(70deg);
+}
+
+.text-wrapper ul li:nth-child(4n+0)::before {
+	-webkit-transform: rotate(110deg);
+	transform: rotate(110deg);
+}
+
+.text-wrapper ul li:nth-child(5n+0)::before {
+	-webkit-transform: rotate(150deg);
+	transform: rotate(150deg);
+}
+
+.text-wrapper {
+	max-width: 38rem;
+}
+
+.text-wrapper h1,
+.text-wrapper h2 {
+	font-size: 1.4rem;
+	line-height: 1.5rem;
+	margin: 3rem 0 1rem 2rem;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.text-wrapper h1:first-child,
+.text-wrapper h2:first-child {
+	margin-top: 0;
+}
+
+
+.text-wrapper ol {
+    list-style-type: none;
+    counter-reset: li;
+}
+.text-wrapper ol li {
+    counter-increment: step;
+}
+.text-wrapper ol li::before {
+    content: counter(step, decimal);
+    font-family: 'rubik';
+    width: 1.5rem;
+    display: inline-block;
+    opacity: .3;
+}
+.text-wrapper h3 {
+	font-family: "karla", sans-serif;
+	font-size: 1rem;
+	line-height: 1.3rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	padding-left: 2rem;
+	text-transform: uppercase;
+}
+
+.text-wrapper hr {
+	background: #ff4d2a;
+}
+
+blockquote ol {
+	white-space: pre-line;
+	font-family: "rubik";
+	text-transform: uppercase;
+	font-size: 1rem;
+	margin-left: 2rem;
+	line-height: 0.3rem;
+	counter-reset: item;
+}
+
+blockquote ol li {
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+
+blockquote ol li:before {
+	content: counter(item);
+	counter-increment: item;
+	color: #31e967;
+	width: 2rem;
+	display: inline-block;
+	margin-left: -2rem;
+}
+
+figcaption {
+	font-family: "whoismono", monospace;
+	font-size: 0.85rem;
+	line-height: 1.1rem;
+	margin-top: 0;
+	margin-left: 2rem;
+}
+
+a.noborder, .main a.noborder {
+	border: none;
+	text-decoration: none;
+}
+
+.centered {
+	text-align: center;
+}
+
+.infobulle {
+	position: relative;
+	cursor:default;
+}
+.infobulle::after {
+	content: attr(data-info);
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	background: #ddd;
+	white-space: nowrap;
+	text-transform: none;
+	font-size: .85rem;
+	line-height: 120%;
+	padding: .25rem .5rem;
+	transform: translateX(-50%);
+	box-shadow: 0px 0px 3px rgba(0,0,0,.2);
+	color: white;
+	z-index: 999;
+	display: none;
+}
+.infobulle:hover::after {
+	display: block;
+}

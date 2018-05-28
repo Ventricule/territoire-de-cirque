@@ -1,0 +1,181 @@
+// main: ../main.less
+
+/* Forms
+-------------------------------------------------- */
+
+form h2 {
+	margin-bottom: 1rem;
+}
+
+input,
+select {
+	border: 1px solid;
+	height: 2rem;
+	line-height: 2rem;
+	color: #001abb;
+	font-family: "karla";
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	padding: 0 .5rem;
+}
+
+input[type=submit] {
+	background-color: #001abb;
+	color: #fff;
+	cursor: pointer;
+}
+
+.medium-editor-placeholder-relative::after, .medium-editor-placeholder::after {
+	font-style: normal !important;
+	padding: 0 !important;
+	opacity: .5 !important;
+}
+
+/* Searchbar
+-------------------------------------------------- */
+
+#searchbar,
+#filtersbar {
+	border-bottom: 1px solid;
+	padding: 1rem;
+	border-top: 1px solid;
+	background-image: url("../images/diffusion.png");
+}
+
+#searchbar form {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+}
+
+#searchbar input {
+	margin: 0;
+	border: 0;
+}
+
+#searchbar input:not([type=submit]) {
+	color: #001abb;
+	width: 50%;
+	width: calc(50% - 2rem);
+	-webkit-box-flex: 3;
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	margin-right: 2rem;
+	padding-right: 0;
+}
+
+#searchbar input[type=submit] {
+	border-radius: 100%;
+	width: 2rem;
+}
+
+#searchbar select {
+	color: #001abb;
+	font-family: "karla";
+	font-size: 0.85rem;
+	height: 2rem;
+	border: 0;
+	padding: 0 .5rem;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	margin-bottom: 0;
+	margin-right: 2rem;
+}
+
+#searchbar .here {
+	white-space: nowrap;
+	height: 2rem;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	margin-right: 2rem;
+	min-width: 8rem;
+}
+
+#searchbar .here input[type=checkbox] {
+	margin-right: 0.5rem;
+	display: block;
+	float: left;
+	width: 2rem;
+}
+
+#searchbar .here label {
+	white-space: nowrap;
+	display: inline-block;
+	height: 2rem;
+	vertical-align: top;
+	font-size: 0.85rem;
+	line-height: 1rem;
+}
+
+#searchbar .btn-more {
+	cursor: pointer;
+	margin-right: 2rem;
+	background-color: #fff;
+	padding: 0px 1rem;
+	line-height: 2rem;
+	font-size: 0.85rem;
+	border-radius: 1rem;
+	max-width: 2rem;
+	overflow: hidden;
+	height: 2rem;
+	background-image: url(../images/plus.svg);
+	background-repeat: no-repeat;
+	background-position: .6rem center;
+	background-size: .85rem;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+	white-space: nowrap;
+}
+
+#searchbar .btn-more span {
+	vertical-align: top;
+}
+
+#searchbar .btn-more span:first-child {
+	width: 1rem;
+	text-indent: 9999px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+#searchbar .btn-more:hover {
+	max-width: 20rem;
+}
+
+#searchbar.transition .btn-more {
+	max-width: 2rem !important;
+	-webkit-transform: rotate(0deg) !important;
+	transform: rotate(0deg) !important;
+}
+
+#searchbar .more {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-transition: max-width .5s linear 0s;
+	transition: max-width .5s linear 0s;
+	max-width: 0%;
+	overflow: hidden;
+}
+
+#searchbar.full .more {
+	max-width: 100%;
+}
+
+#searchbar.full.transition .btn-more {
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+
+#searchbar.full .btn-more:hover {
+	max-width: 2rem;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}

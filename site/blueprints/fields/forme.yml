@@ -1,0 +1,8 @@
+label: Forme
+type: select
+options:
+	cercle: Cercle
+	demi-cercle: Demi-cercle
+	losange: Losange
+	chapiteau: Chapiteau
+	arc: Arc

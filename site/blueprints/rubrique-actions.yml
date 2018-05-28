@@ -1,0 +1,17 @@
+title: Rubrique action
+pages:
+	template: 
+		- actions
+		- page
+files: false
+fields:
+  title:
+    label: Titre
+    type:  text
+	exergue:
+		label: Exergue
+		type: textarea
+		buttons: false
+  text:
+    label: Texte
+    type:  textarea

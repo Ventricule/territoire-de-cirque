@@ -1,0 +1,17 @@
+title: Dossier de documents partagés
+icon: folder
+options:
+	preview: false
+	url: false
+	template: false
+	delete: false
+	status: false
+pages:
+	template:
+		- documents-partages
+files: false
+fields:
+	title:
+		label: Nom
+		type:  text
+		readonly: true

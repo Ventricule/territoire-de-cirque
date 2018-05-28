@@ -1,0 +1,170 @@
+// main: ../main.less
+
+/* Ressources : Folder Content
+-------------------------------------------------- */
+
+.folder-content {
+	margin-top: 2rem;
+}
+
+.folder-content ul {
+	list-style-type: none;
+	margin-right: -4rem;
+}
+
+.folder-content li {
+	width: 17rem;
+	margin-bottom: 4rem;
+	float: left;
+	padding-right: 4rem;
+	position: relative;
+}
+
+.folder-content .icon {
+	width: 100%;
+	position: relative;
+	text-overflow: ellipsis;
+	margin-bottom: .5rem;
+}
+
+.folder-content .icon figure {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	margin: 0px;
+	background-position: center center;
+	-webkit-filter: url('../../images/filters.svg#red');
+	filter: url('../../images/filters.svg#red');
+	background-size: contain;
+}
+
+.folder-content .folder .icon figure.forme {
+	//background-size: 60% 60%;
+	background-color: #fffd53;
+}
+
+.folder-content .icon figure.forme {
+	background-color: #fffd53;
+	background-size: 100% 100%;
+	-webkit-filter: none;
+	filter: none;
+}
+
+.folder-content .folder .icon {
+	/*border: 1px solid;*/
+	/*box-shadow: 2px 2px 0 #fff, 3px 3px 0 #001abb, 5px 5px 0 #fff, 6px 6px 0 #001abb;*/
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	margin: 0;
+}
+
+.folder-content .folder:hover .icon {
+	/*-webkit-transform: translate(-0px, -6px);
+	transform: translate(-0px, -6px);
+	box-shadow: 5px 5px 0 #fff, 6px 6px 0 #001abb, 7px 7px 0 #fff;
+	border: 1px solid #001abb;
+	-webkit-transition: all .2s;
+	transition: all .2s;*/
+}
+
+.folder-content .icon:hover h3 .name {
+	text-decoration: underline;
+}
+
+.folder-content li:not(.folder) .icon h3 {
+    position: absolute;
+    top: 50%;
+    left: .5rem;
+    right: .5rem;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    mix-blend-mode: multiply;
+    margin-top: -0.5rem;
+}
+
+.folder-content .folder .icon h3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.folder-content .folder .icon .name {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: auto;
+	padding: 1rem 2rem;
+	transform: translateY(-50%);
+	text-align: center;
+	mix-blend-mode: multiply;
+	width: 100%;
+}
+
+.folder-content .icon span.type {
+	display: block;
+	font-size: .85rem;
+	opacity: .5;
+}
+
+.folder .icon span.type {
+	display: block;
+	font-size: .85rem;
+	top: 0.5rem;
+	left: 0;
+	border-bottom-color: #FFFD53;
+	mix-blend-mode: multiply;
+	opacity: .7;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.folder-content .download .icon::before {
+  content: '>';
+	position: absolute;
+	bottom: 1.5rem;
+	z-index: 999;
+	background-image: url(../images/fleche.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 2rem;
+	height: 2rem;
+	text-indent: -9999px;
+	left: 50%;
+	margin-left: -1rem;
+	mix-blend-mode: multiply;
+	border: 1px solid #4B5DFB;
+	border-radius: 50%;
+}
+
+.folder-content .icon:after {
+	padding-top: 100%;
+	display: block;
+	content: '';
+}
+
+.folder-content .caption {
+	position: absolute;
+	top: 100%;
+	margin-top: 0.5rem;
+	max-height: 3rem;
+	padding-right: 4rem;
+	text-align: center;
+	width: 100%;
+	opacity: .5;
+}
+
+.folder-content .caption {
+	opacity: 0;
+}
+.folder-content li:hover .caption {
+	opacity: .5;
+}
+
+.folder-content li p {
+	margin: 0;
+}

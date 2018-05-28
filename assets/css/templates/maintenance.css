@@ -1,0 +1,94 @@
+/* Maintenance
+-------------------------------------------------- */
+
+#maintenance-img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 30rem;
+	margin-left: -15rem;
+	margin-top: -10rem;
+	padding: 2rem;
+	background-color: #fff;
+	pointer-events: none;
+}
+
+#maintenance-img img {
+	width: 100%;
+}
+
+#maintenance-title {
+	position: fixed;
+	top: 15%;
+	left: 0;
+	right: 0;
+}
+
+#maintenance-text {
+	position: fixed;
+	bottom: 15%;
+	left: 0;
+	right: 0;
+}
+
+#maintenance-text a {
+	border-bottom: 1px solid !important;
+}
+
+#dots > div {
+	width: .85rem;
+	height: .85rem;
+	border-radius: 50%;
+	background-color: #001abb;
+	position: fixed;
+	z-index: 999;
+}
+
+.login-popup {
+	position: fixed;
+	bottom: 50%;
+	right: 20%;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	transform: translate(50%, 50%);
+	z-index: 9999;
+	padding: 2rem;
+}
+
+footer {
+	display: none;
+}
+#maintenance-login {
+	transition: all .5s;
+}
+
+#maintenance-login.show {
+	display: block;
+	box-shadow: 0rem 0rem 1rem #001abb;
+	right: 50%;
+}
+
+.page-maintenance .footer {
+	width: 100vh;
+	position: fixed;
+	left: 0px;
+	margin: 0px;
+	padding-bottom: 2rem;
+	-webkit-transform-origin: 0% 100% 0px;
+	transform-origin: 0% 100% 0px;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	bottom: 100%;
+	height: auto;
+}
+
+.page-maintenance .footer .footer-content {
+	margin: 0px 2rem;
+	padding: 0px;
+	padding-top: .5rem;
+	height: auto;
+}
+
+.page-maintenance .copyright {
+	display: none;
+}

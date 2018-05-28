@@ -1,0 +1,29 @@
+/* PRESENTATIONS
+-------------------------------------------------- */
+
+.rubrique-presentation .text-wrapper {
+	max-width: none;
+}
+
+.chapo {
+	margin-bottom: 1rem;
+}
+
+.informations-secondaires {
+	margin-left: 2rem;
+	height: calc(100vh - 5rem);
+}
+
+.text-wrapper blockquote {
+    padding-left: 0;
+    border-left: 0;
+}
+.text-wrapper blockquote ol li::before {
+    content: counter(step);
+    counter-increment: item;
+    color: #31e967;
+    width: 2rem;
+    display: inline-block;
+    margin-left: -2rem;
+	opacity: 1;
+}

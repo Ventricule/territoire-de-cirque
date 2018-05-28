@@ -1,0 +1,8 @@
+title: Connection
+hide: true
+pages: false
+files: false
+fields:
+  title:
+    label: Title
+    type:  text

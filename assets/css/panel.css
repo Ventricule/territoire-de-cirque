@@ -1,0 +1,202 @@
+.app {
+	
+}
+a,
+.app, 
+input, 
+.input, 
+button,
+.selectbox,
+.search-section li.active a, 
+.search-section li:hover a,
+.hgroup-options a:hover {
+  color: #001abb;
+}
+.languages, 
+.topbar,
+.nav-icon,
+.breadcrumb,
+.tag {
+    background: #001abb;
+}
+.search-input.tag,
+.tag-label:focus, 
+.tag-is-focused .tag-label {
+	background: #FF8484 !important;
+}
+.search:after {
+    border-bottom-color: #FF8484;
+}
+.grey {
+    background: transparent;
+}
+.label abbr,
+.field-with-headline .hgroup:before,
+.breadcrumb-link:hover,
+.nav-icon:hover,
+.dropdown-list>li>a:hover,
+.dropdown-list>li>a:hover i {
+  color: #FF8484;
+}
+.search-section a small {
+  color: rgba(255,255,255,.5);
+}
+.marginalia,
+.marginalia a,
+.marginalia span,
+.subpages-grid h3,
+.counter {
+  color: #7D7DFF !important;
+}
+
+.dashboard-section {
+	border: 1px solid;
+	/*box-shadow: 3px 3px 0;*/
+	margin-right: 3px;
+}
+
+.breadcrumb-label:after {
+ display: none;
+}
+.breadcrumb-link:after, .breadcrumb-link:before {
+	background: #fff;
+}
+body.ltr .nav-icon-left, 
+body.rtl .nav-icon-right {
+    border-right: 1px solid #fff;
+}
+body.ltr .languages,
+body.ltr .nav-icon-right, 
+body.rtl .nav-icon-left {
+    border-left: 1px solid #fff;
+}
+
+.hgroup, .hgroup-title {
+  border-bottom: 2px solid #FF8484;
+}
+.hgroup a:after {
+  background: #001abb;
+	opacity: .5;
+}
+.hgroup-options .icon {
+	color: #001abb;
+}
+.hgroup-options {
+  color: #7D7DFF;
+}
+
+.btn-rounded {
+  border: 2px solid #001abb;
+	background-color: #fff;
+}
+.btn-rounded:focus, 
+.btn-rounded:hover {
+   background: #001abb;
+}
+.input {
+	border: 1px solid;
+}
+.input-is-readonly {
+    background: transparent;
+	background-image: url(../images/diffusion50.png);
+}
+.field-is-readonly .field-icon {
+    background: transparent;
+}
+.input:focus {
+  border-color: #FF8484;
+}
+
+.file {
+  border: 1px solid;
+}
+
+.structure-table {
+	border: 2px solid #7D7DFF;
+	border-bottom: 1px solid #7D7DFF;
+	border-right: 1px solid #7D7DFF;
+}
+.structure-table td, .structure-table th {
+    border-bottom: 1px solid #7D7DFF;
+    border-right: 1px solid #7D7DFF;
+}
+.structure-table th {
+    color: #7D7DFF;
+}
+
+.selector-item-selected, 
+.selector-item-selected a,
+.search-results {
+  background: #FF8484;
+}
+
+.label-option, 
+.btn-with-icon {
+	color: #7D7DFF;
+}
+.label-option .icon, 
+.label-option:hover,
+.btn-with-icon .icon, 
+.btn-with-icon:focus, 
+.btn-with-icon:hover {
+	color: #001abb;
+}
+body.ltr .field-icon {
+	border-left: 1px dashed #7D7DFF;
+}
+.field-icon .icon {
+  color: #7D7DFF;
+}
+.tab-nav {
+	border-bottom: 4px solid;
+	background-color: transparent;
+}
+.tab-nav li.active {
+	border-bottom: 4px solid #FF8484;
+	background-color: transparent;
+}
+
+.input-with-multiselectbox .input-list {
+    border: solid #FF8484;
+}
+
+.sidebar-toggle {
+	color: #001abb;
+	background-image: url(../images/diffusion.png);
+	background-color: #fff;
+	border: 2px solid #001abb;
+	border-radius: 3px;
+}
+.sidebar-toggle > span {
+	background-color: #fff;
+	padding: .1rem .4rem;
+}
+.sidebar-toggle:hover {
+	color: #001abb;
+}
+.sidebar-toggle::after {
+	border-top: .4em solid #001abb;
+}
+@media screen and (max-width:50em) {
+	.sidebar-expanded .sidebar-toggle::after {
+		border-top: 0;
+		border-bottom: .4em solid #001abb;
+	}
+	.sidebar-content {
+		border: 1px solid;
+		border-top: 1px dashed;
+	}
+	.sidebar-expanded .sidebar-toggle {
+		border: 1px solid;
+		border-bottom: none;
+	}
+}
+
+@media screen and (min-width: 50em) {
+	.mainbar .form .buttons .text span {
+    background: #FF8484;
+	}
+	.mainbar .form .buttons .text span:after {
+    border-top: 5px solid #FF8484;
+	}
+}

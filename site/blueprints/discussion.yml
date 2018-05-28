@@ -1,0 +1,12 @@
+title: Dossier
+icon: comments
+pages:
+	template:
+		- discussion
+	num: date
+	sort: flip
+files: false
+fields:
+	title:
+		label: Titre
+		type:  text

@@ -1,0 +1,29 @@
+/* ACTU DES MEMBRES
+-------------------------------------------------- */
+
+/* ACTUALITE : EVENT
+------------------------------------------------- */
+
+.template-actualite .event-dates {
+	color: #FF8236;
+}
+
+.template-actualite h2,
+.template-actualite .h2,
+.template-actualite h4 {
+	margin: 0;
+	text-align: left;
+}
+
+.template-actualite .event-membre {
+	margin-left: 2rem;
+}
+
+.template-actualite h4 {
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	margin-left: 2rem;
+}
+.text-wrapper {
+    margin-top: 1rem;
+}

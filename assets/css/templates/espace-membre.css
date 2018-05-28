@@ -1,0 +1,151 @@
+/* ESPACE MEMBRE
+-------------------------------------------------- */
+
+.rubrique-espace-membre .iframe-wrapper {
+	overflow: hidden;
+	border: 1px solid;
+	width: 66%;
+	float: left;
+}
+
+.template-espace-membre .iframe-wrapper.wide {
+	width: 100%;
+}
+
+.rubrique-espace-membre main iframe {
+	width: 100%;
+	height: calc( 100vh - 7rem);
+	margin-top: -3rem;
+	display: block;
+}
+
+.template-espace-membre #explorer {
+	width: 28%;
+	float: left;
+	max-height: calc( 100vh - 10rem);
+	overflow-y: auto;
+	min-height: 1rem;
+	margin-right: 5%;
+}
+
+.template-espace-membre iframe {
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
+}
+.template-espace-membre iframe.loading {
+	opacity: .2;
+}
+
+
+/* ESPACE MEMBRE SUBPAGES LIST
+-------------------------------------------------- */
+
+#new-page {
+	display: none;
+	border: 1px solid;
+	background-image: url(../../images/diffusion.png);
+	border-bottom: 0;
+	padding: 1rem 1rem 0 1rem;
+}
+
+#new-page select,
+#new-page input {
+	width: 100%;
+}
+
+#list-subpages .subpages-navbar {
+	border: 1px solid;
+	position: relative;
+	background-image: url(../../images/diffusion.png);
+}
+
+#list-subpages .subpages-navbar .button {
+	cursor: pointer;
+	height: 2.4rem;
+	padding: 0 1rem;
+	line-height: 2.4rem;
+	text-align: center;
+	margin: 0;
+	background-color: #fff;
+}
+
+#list-subpages .subpages-navbar .button:hover {
+	background-color: #001abb;
+	color: #FFF;
+}
+
+#list-subpages .subpages-navbar .button.left {
+	float: left;
+	border-right: 1px solid;
+}
+
+#list-subpages .subpages-navbar .button.right {
+	float: right;
+	border-left: 1px solid;
+}
+
+#list-subpages .subpage {
+	padding: .5rem 0;
+	border-bottom: 1px solid;
+	position: relative;
+	cursor: pointer;
+}
+/*
+#list-subpages .subpage.child::before {
+	content: ' ';
+	font-family: sans-serif;
+	float: left;
+	width: .75rem;
+	height: .75rem;
+	background-color: #001abb;
+	border-radius: 50%;
+	margin: .25rem .5rem .25rem 0;
+}
+#list-subpages .subpage.child.invisible::before {
+	background: none;
+	border: 1px solid;
+}
+*/
+#list-subpages .subpage.child.invisible {
+	opacity: .5;
+}
+#list-subpages[data-templates='documents-partages'] .subpage.child.invisible {
+	opacity: 1;
+}
+#list-subpages .subpage.parent {
+	border: 1px solid;
+	border-bottom: 0;
+	text-align: center;
+}
+#list-subpages .subpage.parent:hover {
+	border-color: transparent;
+}
+#list-subpages .subpage.parent p {
+	margin: 0;
+}
+#list-subpages .subpage.parent div {
+	display: none;
+}
+
+#list-subpages .subpage:hover,
+#list-subpages .subpage.active {
+	background-color: #001abb;
+	color: #fff;
+}
+
+#list-subpages .subpage p {
+	margin: 0;
+	margin-right: 5rem;
+}
+
+#list-subpages .subpage .subpage-date {
+	position: absolute;
+	bottom: .5rem;
+	right: 0;
+	opacity: .5;
+}
+
+#list-subpages .subpage.previous {
+	background-image: url('../../images/diffusion.png');
+	padding-left: 0.5rem;
+}

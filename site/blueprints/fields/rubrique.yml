@@ -1,0 +1,7 @@
+label: Rubrique
+type: select
+required: true
+options:
+	Actualité: Actualité
+	Action: Action
+	Publication: Publication
