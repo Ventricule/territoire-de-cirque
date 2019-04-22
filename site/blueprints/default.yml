@@ -1,5 +1,3 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Page
 pages: true
 files: 
@@ -14,4 +12,4 @@ fields:
 		buttons: false
   text:
     label: Texte
-    type:  textarea
+    type:  wysiwyg

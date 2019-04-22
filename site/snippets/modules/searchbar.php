@@ -21,8 +21,11 @@
 			</select>
 			<select name="member">
 				<option value=''>Membre</option>
-					<?php foreach (page('ressources')->index()->pluck('member', ',', true) as $member) : ?>
-				<option value="<?= $member ?>"><?= $member ?></option>
+				<?php foreach (page('ressources')->index()->pluck('membre', ',', true) as $member) : ?>
+					<?php 
+					$pagemembre = page('membres/les-membres/'.$member);
+					$member_full_name = $pagemembre ? $pagemembre->title() : $member; ?>
+					<option value="<?= $member ?>"><?= $member_full_name ?></option>
 				<?php endforeach ?>
 			</select>
 			<select name="year">

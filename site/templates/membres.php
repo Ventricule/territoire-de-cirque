@@ -2,13 +2,17 @@
 <?php snippet('menus/menu') ?>
 
 <div id="left-side">
-	<?php snippet('menus/siblings', array('page' => $page)) ?>
+	<?php snippet('menus/menu-second', array('page' => $page)) ?>
 </div>
 
-<main class="main wide" role="main">
+<main id="panel" class="main wide cf" role="main">
 	
 	
-	<div id="map-membres" class="map"><nav id='filter-group' class='filter-group'></nav></div>
+	<div id="map-membres" class="map">
+		<figure><img src="<?= $site->url() ?>/assets/images/reunion.png" width="140" height="140"></figure>
+	</div>
+	
+	<nav id='filter-group' class='filter-group cf'></nav>
 	
 	
 	<div id="liste-membres">
@@ -20,7 +24,7 @@
 				'features' => array()
 			);
 
-			foreach( $page->children() as $membre ) :
+			foreach( $page->children()->visible() as $membre ) :
 				$logo = thumb( $membre->file($membre->logo()), array( 'width' => 300, 'grayscale' => false ) );
 				$activites = $membre->activites()->split();
 				$properties = [];
@@ -39,18 +43,22 @@
 				?>
 
 				<li data-uid='<?= $membre->uid() ?>' data-activites="<?= implode(' ', $membre->activites()->split()) ?>">
-					<a href="<?= $membre->url()?>" class="titraille">
-						<figure><img src='<?= $logo->url() ?>' width='<?= $logo->width() ?>' height='<?= $logo->height() ?>'/></figure>
-						<h2 class="membre-prenom"><?= $membre->title() ?></h2>
-					</a>
-						<h3 class="membre-nom"><?= $membre->complement() ?></h3>
-						<h3 class="membre-activites"><?php foreach($activites as $activite)	echo " — ".id2title($activite); ?></h3>
-						<h3 class="membre-ville"><?= $membre->ville()." ({$membre->departement()}) " ?></h3>
-					<a href="<?= $membre->url()?>">
-						<h3 class="membre-more">Voir +</h3>
-					</a>
-					
-
+					<div class="wrapper">
+						<a href="<?= $membre->url()?>" class="titraille">
+							<?php if($logo->url() && $logo->name() != "index-225x225"): ?>
+								<figure style="background-image:url(<?= $logo->url() ?>)"></figure>
+							<?php else: ?>
+								<figure class="placeholder"></figure>
+							<?php endif ?>
+							<h2 class="membre-prenom"><?= $membre->title() ?></h2>
+						</a>
+							<h3 class="membre-nom"><?= $membre->complement() ?></h3>
+							<h3 class="membre-activites"><?php foreach($activites as $activite)	echo " — ".id2title($activite); ?></h3>
+							<h3 class="membre-ville"><?= $membre->ville()." ({$membre->departement()}) " ?></h3>
+						<a href="<?= $membre->url()?>">
+							<h3 class="membre-more">Voir +</h3>
+						</a>
+					</div>
 				</li>
 
 				<?php

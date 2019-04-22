@@ -241,8 +241,7 @@ class WysiwygField extends BaseField {
     protected function convertToMarkdown($html)
     {
         $converter = new League\HTMLToMarkdown\HtmlConverter(array(
-            'strip_tags'   => false,
-            'remove_nodes' => 'style',
+            'strip_tags' => false,
             'header_style' => $this->headingStyle
         ));
         return $converter->convert($html);

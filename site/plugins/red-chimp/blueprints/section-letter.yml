@@ -1,0 +1,134 @@
+title:
+  en:                       Newsletter Index
+  fr:                       Index Lettres
+pages:
+  template:                 letter
+  sort:                     date
+files:
+  type:                     image
+
+options:
+  preview: false
+  status: false
+  template: false
+  url: false
+  delete: false
+
+fields:
+
+  # -----
+  title:
+    label:
+      en:                   Teöplqte name
+      fr:                   Nom du gabarit
+    type:                   text
+
+  subpagelist:
+    label:
+      en:                   Letters
+      fr:                   Lettres
+    type:                   subpagelist
+
+  # -----
+  letter_layout:
+    label:
+      en:                   Design
+      fr:                   Design
+    type:                   headline
+
+  letter_logo:
+    label:
+      en:                   Logo
+      fr:                   Logotype
+    type:                   image
+
+  letter_bg_color:
+    label:
+      en:                   Background color
+      fr:                   Couleur d’arrière plan
+    type:                   colorlist
+    options:
+      - "#ffffff"
+      - "#001abb"
+      - "#31e967"
+      - "#FF8236"
+      - "#ff4d2a"
+      - "#fffd53"
+      - "#ffbfe9"
+      - "#ff8484"
+    width:                  1/3
+
+  letter_first_color:
+    label:
+      en:                   Text color
+      fr:                   Couleur du texte
+    type:                   colorlist
+    options:
+      - "#ffffff"
+      - "#001abb"
+      - "#31e967"
+      - "#FF8236"
+      - "#ff4d2a"
+      - "#fffd53"
+      - "#ffbfe9"
+      - "#ff8484"
+    width:                  1/3
+
+  letter_second_color:
+    label:
+      en:                   Text color
+      fr:                   Couleur secondaire
+    type:                   colorlist
+    options:
+      - "#ffffff"
+      - "#001abb"
+      - "#31e967"
+      - "#FF8236"
+      - "#ff4d2a"
+      - "#fffd53"
+      - "#ffbfe9"
+      - "#ff8484"
+    width:                  1/3
+
+  # -----
+  letter_footer:
+    label:
+      en:                   Newsletter footer
+      fr:                   Pied de page
+    type:                   headline
+
+  footer_text:
+    label:
+      en:                   Content
+      fr:                   Contenu
+    type:                   textarea
+    buttons:
+      - italic
+      - bold
+      - link
+    icon:                   font
+
+  # -----
+  letter_links:
+    label:
+      en:                   Links
+      fr:                   Liens
+    type:                   headline
+
+  letter_tw:
+    label:                  Twitter
+    type:                   url
+    icon:                   twitter
+    placeholder:
+      en:                   Twitter page URL
+      fr:                   URL de la page Twitter
+    width:                  1/2
+
+  letter_fb:
+    label:                  Facebook
+    type:                   url
+    icon:                   facebook-square
+    placeholder:
+      en:                   Facebook page URL
+      fr:                   URL de la page Facebook
+    width:                  1/2

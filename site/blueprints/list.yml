@@ -1,0 +1,12 @@
+title: List
+
+files: false
+
+icon: envelope 
+
+options:
+  preview: false
+  status: false
+  template: false
+  url: false
+  delete: false

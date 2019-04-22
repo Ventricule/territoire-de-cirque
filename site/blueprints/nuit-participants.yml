@@ -1,0 +1,17 @@
+title: Participants
+hide: true
+options:
+  preview: false
+  url: false
+  template: false
+  delete: false
+  status: false
+pages:
+  template:
+    - nuit-participant
+files: false
+fields:
+  title:
+    label: Titre
+    type:  text
+    readonly: true

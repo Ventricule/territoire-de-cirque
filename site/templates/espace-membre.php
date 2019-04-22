@@ -6,7 +6,7 @@
 	</div>
 
   <main id="panel" class="main wide cf" role="main">
-  	<?php 
+  	<?php
 		$pageUri = (string)$page->folderUri();
 		$pageToShow = page($pageUri);
 		$explorer = (string)$page->subpages();
@@ -36,20 +36,20 @@
 					$pageUri = (string)$pageToShow->uri();
 				endif;
 
-				if($explorer): 
+				if($explorer):
 				?>
 					<div id="explorer">
 						<div id="list-subpages" data-uri="<?= $pageUri ?>" data-folders="<?= (string)$page->subpages() ?>" data-navigate="<?= (string)$page->navigate() ?>" data-templates="<?= $pageToShow->templates() ?>">
 						</div>
 					</div>
 				<?php endif ?>
-				<?php 
+				<?php
 				$src = $pageToShow ? $site->url() . "/panel/pages/$pageUri/edit" : $site->url() . "/panel/$pageUri/edit" ;
 				?>
 				<div class="iframe-wrapper <?= $explorer ? '' : 'wide' ; ?>">
 					<iframe src="<?= $src ?>"></iframe>
 				</div>
-			
+
 			<?php
 			else:
 			?>

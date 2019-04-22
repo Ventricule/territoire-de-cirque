@@ -1,5 +1,3 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Article
 pages: false
 files:
@@ -8,6 +6,12 @@ files:
 		caption:
 			label: Légende
 			type: textarea
+options:
+	preview: true
+	url: false
+	template: false
+	delete: true
+	status: true
 fields:
 	title:
 		label: Titre
@@ -21,17 +25,23 @@ fields:
 	author:
 		label: Auteur.e.s
 		type: tags
-	member:
-		label: Membre.s
-		type: tags
-	une:
-		label: Image à la une
-		type: image
-		width: 1/3
+	membre:
+		label: Membre(s)
+		type: multiselect
+		options: query
+		query:
+			page: membres/les-membres
+			fetch: visibleChildren
 	tags:
 		label: Mots-clés
 		type: tags
-		width: 2/3
+	fichier:
+		label: Fichier (remplace la suite)
+		type: select
+		options: files
+	une:
+		label: Image à la une
+		type: image
 	introduction:
 		label: Introduction
 		type: textarea

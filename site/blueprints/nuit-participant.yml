@@ -1,0 +1,93 @@
+title: Participant
+pages: false
+options:
+  preview: false
+  url: false
+  template: false
+  delete: true
+  status: false
+files:
+  sortable: true
+  size: 41943040
+fields:
+  title:
+    label: Titre
+    type: text
+    required: true
+  membre:
+    label: Auteur
+    type: user
+    readonly: true
+
+  h0:
+    label: Informations
+    type: headline
+  nature:
+    label: Nature
+    type: text
+    help: débat, spectacle, atelier, entraînement sauvage…
+    required: true
+  public:
+    label: Public
+    type: text
+    help: tout public, à partir de…
+  partenariat:
+    label: En partenariat avec…
+    type: text
+
+  h1:
+    label: Heure et lieu
+    type: headline
+  time:
+    label: Horaire
+    type: time
+    interval: 15
+    required: true
+  place:
+    label: Lieu
+    type: text
+    required: true
+  adress:
+    label: Adresse
+    type: text
+    required: true
+  city:
+    label: Ville
+    type: text
+    required: true
+  departement:
+    label: Numéro du département
+    type: number
+    required: true
+
+  h2:
+    label: Réservation / renseignement
+    type: headline
+  email:
+    label: E-mail
+    type: email
+  phone:
+    label: Téléphone
+    type: tel
+  website:
+    label: Site internet
+    type: url
+
+  h3:
+    label: Texte
+    type: headline
+  text:
+    label: Argument (300 caractères)
+    type: wysiwyg
+    required: true
+
+  h4:
+    label: Image
+    type: headline
+  cover:
+    label: Visuel
+    type: image
+    help: Image JPG en HD, 3 Mo max — Cliquez-déposez, puis sélectionnez l'image dans la liste.
+  caption:
+    label: Crédit photo
+    type: text

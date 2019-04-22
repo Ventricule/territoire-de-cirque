@@ -1,17 +1,29 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Dossier
+icon: folder
 pages:
 	template:
 		- file
 		- folder
+	num: date
+	sort: flip
 files:
+	sortable: true
+	fields:
+		caption:
+			label: Légende
+			type: textarea
 	type:
 		- image
 fields:
-  title:
-    label: Nom
-    type:  text
+	title:
+		label: Nom
+		type:  text
+		width: 3/4
+	date:
+		label: Publication
+		type: date
+		default: today
+		width: 1/4
 	exergue:
 		label: Description
 		type: text

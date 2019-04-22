@@ -1,7 +1,7 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Rubrique
-pages: membre
+pages: 
+	template: membre
+	num: zero
 files: false
 fields:
   title:

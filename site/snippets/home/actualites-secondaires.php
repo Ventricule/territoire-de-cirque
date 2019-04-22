@@ -13,7 +13,7 @@
 					echo "<figcaption>" . $image->caption() . "</figcaption>";
 				endif;
 			elseif($video = (string)$actu->video()):
-				echo $actu->video()->oembed();
+				echo $actu->video()->embed();
 			else:
 				if($forme = (string)$actu->forme()):
 					echo "<div class='forme $forme'></div>";

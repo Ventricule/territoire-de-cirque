@@ -3,3 +3,230 @@ Title: Accueil
 ----
 
 Text: 
+
+----
+
+Actu1-texte: 
+
+----
+
+Actu1-rubrique: 
+
+----
+
+Actu1-image: 
+
+----
+
+Actu1-video: https://www.youtube.com/watch?v=FYanfQDszp4
+
+----
+
+Actu1-forme: 
+
+----
+
+Actu-1-1-texte: 
+
+(link: # text: Cirque en campagne) : 13 rencontres thématiques pour le développement des arts du cirque sur le territoire national d’avril à décembre 2011.
+(link: # text: 1 livret à télécharger) « Cirque en campagne, 10 propositions pour une politique du cirque en France »
+
+----
+
+Actu-1-1-rubrique: Actualité
+
+----
+
+Actu-1-1-image: 
+
+----
+
+Actu-1-1-video: 
+
+----
+
+Actu-1-1-forme: demi-cercle
+
+----
+
+Actu-1-2-texte: Le regard particulier d’un membre de TDC nous éclaire sur l’avenir du cirque équestre en France : (link: http://localhost/territoires-de-cirque/ressources/publications/points-de-vue/le-cirque-ce-qui-rassemble text: Le cirque, ce qui rassemble)
+
+----
+
+Actu-1-2-rubrique: 
+
+----
+
+Actu-1-2-image: _olivier_meyrou_tu_2.jpg
+
+----
+
+Actu-1-2-video: 
+
+----
+
+Actu-1-2-forme: 
+
+----
+
+Actu-2-1-texte: 
+
+(link: # text: Cirque en campagne) : 13 rencontres thématiques pour le développement des arts du cirque sur le territoire national d’avril à décembre 2011.
+(link: # text: 1 livret à télécharger) « Cirque en campagne, 10 propositions pour une politique du cirque en France »
+
+----
+
+Actu-2-1-rubrique: 
+
+----
+
+Actu-2-1-image: matamore.jpg
+
+----
+
+Actu-2-1-video: 
+
+----
+
+Actu-2-1-forme: 
+
+----
+
+Actu-2-2-texte: Le regard particulier d’un membre de TDC nous éclaire sur l’avenir du cirque équestre en France : (link: http://localhost/territoires-de-cirque/ressources/publications/points-de-vue/le-cirque-ce-qui-rassemble text: Le cirque, ce qui rassemble)
+
+----
+
+Actu-2-2-rubrique: 
+
+----
+
+Actu-2-2-image: 
+
+----
+
+Actu-2-2-video: 
+
+----
+
+Actu-2-2-forme: 
+
+----
+
+Actu-2-3-texte: 
+
+(link: # text: Cirque en campagne) : 13 rencontres thématiques pour le développement des arts du cirque sur le territoire national d’avril à décembre 2011.
+(link: # text: 1 livret à télécharger) « Cirque en campagne, 10 propositions pour une politique du cirque en France »
+
+----
+
+Actu-2-3-rubrique: 
+
+----
+
+Actu-2-3-image: 
+
+----
+
+Actu-2-3-video: https://www.youtube.com/watch?v=FYanfQDszp4
+
+----
+
+Actu-2-3-forme: 
+
+----
+
+Actualites-principales: 
+
+- 
+  texte: |
+    Territoires de Cirque au festival Rencontre des jonglages !
+    
+    Mardi 12 avril / 10h / cinéma L'Etoile  1 allée du Progrès / La Courneuve
+    
+    RENCONTRE PROFESSIONNELLE - Cirque en Création(s) #1 : Comment inventer le cirque, comment inventer la ville ?
+    
+    En partenariat avec La Maison des Jonglages, Scène conventionnée La Courneuve
+    
+    [Pour en savoir plus](https://www.territoiresdecirque.com/content/home/communique-de-presse-rencontre-professionnelle-cirque-en-creation-s-1.pdf?1553766761)
+  rubrique: Actualité
+  image: incircus17cpverrerie6.jpg
+  video: ""
+  forme: ""
+- 
+  texte: |
+    Territoires de Cirque signe [la Charte Droit de Cité.](https://www.artcena.fr/actualites/vie-professionnelle/signature-de-la-charte-droit-de-cite)
+    
+    Une nouvelle version, de la charte “Droit de Cité” a été signée le 24 octobre à Auch, à l'occasion du festival Circa. Un outil pour favoriser le dialogue entre collectivités et compagnies, toutes traditions et esthétiques réunies. L’occasion de réaffirmer les valeurs des membres de Territoires de Cirque et leur engagement pour le développement du cirque de création au plus près des territoires.
+    
+    (Re)trouvez le discours de Philippe Le Gal, Président de Territoires de Cirque,[ ici ](https://www.territoiresdecirque.com/content/home/texte-signature-charte-droit-de-cite-oct18.pdf?1542388522)!
+  rubrique: Action
+  image: signature-charte-droit-de-cite.jpg
+  video: ""
+  forme: cercle
+
+----
+
+Actulites-secondaires: 
+
+- 
+  texte: |
+    Cirque en campagne : 13 rencontres thématiques pour le développement des arts du cirque sur le territoire national d’avril à décembre 2011.
+    1 livret à télécharger « Cirque en campagne, 10 propositions pour une politique du cirque en France »
+  rubrique: Action
+  image: 5.dome-ecuries-circa.jpg
+  video: ""
+  forme: ""
+- 
+  texte: |
+    Le regard particulier d’un membre de TDC nous éclaire
+    sur l’avenir du cirque équestre en France : Le cirque, ce
+    qui rassemble
+  rubrique: Ressource
+  image: ""
+  video: https://vimeo.com/121048385
+  forme: ""
+- 
+  texte: 'Le regard particulier d’un membre de TDC nous éclaire sur l’avenir du cirque équestre en France : Le cirque, ce qui rassemble'
+  rubrique: Publication
+  image: ""
+  video: ""
+  forme: chapiteau
+
+----
+
+Actualites-secondaires: 
+
+- 
+  texte: |
+    L’Assemblée Générale ordinaire de l’association nationale Territoires de Cirque s’est tenue le 12 mars 2019, à l'occasion du festival Spring, à Cherbourg.
+    
+    4 nouvelles structures rejoignent TDC :
+    
+    [Le Cirk’Eole](http://www.cirk-eole.fr/), Montigny-les-Metz
+    
+    [Le CIAM](http://www.artsenmouvement.fr/), Centre International des Arts en Mouvement, Aix-en-Provence
+    
+    [Les Trois T](http://www.3t-chatellerault.fr/), Scène Conventionnée de Châtellerault
+    
+    La Batoude, Centre des Arts du cirque et de la Rue, Beauvais
+    
+    Un nouveau bureau et [un nouveau conseil d'administration](https://www.territoiresdecirque.com/content/home/communique-de-presse-ag-2019-territoires-de-cirque.pdf) !
+  rubrique: Actualité
+  image: ""
+  video: ""
+  forme: arc
+- 
+  texte: |
+    Connaître le réseau en un clin d'oeil ?
+    
+    Consultez notre plaquette, [téléchargeable](http://www.territoiresdecirque.com/content/4-ressources/1-publications/20160609-outils-de-communication/20151003-plaquette-de-presentation/tdc-plaquette-ecran.pdf) ou disponible chez nos membres et dans les lieux institutionnels.
+  rubrique: Publication
+  image: photo-carte-tdc.jpg
+  video: ""
+  forme: losange
+- 
+  texte: '(Re)découvrez Cirque en Action(s) : Manifeste pour une action artistique et culturelle réaffirmée [ici ](https://www.territoiresdecirque.com/content/home/tdc-web-2.pdf?1532079882)!'
+  rubrique: Publication
+  image: img_4537.jpg
+  video: ""
+  forme: losange

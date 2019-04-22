@@ -21,10 +21,6 @@
 	border-bottom: 2px solid #25ff20;
 }
 
-.actu figure .kirby-plugin-oembed {
-	padding-top: 66% !important;
-}
-
 .actu figure .forme {
 	padding-bottom: 66% !important;
 	margin: 0;
@@ -89,71 +85,42 @@
 /* Actus Principales */
 
 #actualites-principales {
-	padding-top: 44%;
-	position: relative;
 	margin-bottom: 4rem;
+	position: relative;
 }
 
 #actualites-principales .actu {
-	position: absolute;
 	width: 100%;
+	display: flex;
+	margin-bottom: 3rem;
 }
 
 #actualites-principales .actu:nth-child(odd) {
-	top: 0;
-	right: 0;
+	padding-right: 25%;
 }
 
 #actualites-principales .actu:nth-child(even) {
-	bottom: 0;
-	left: 0;
+	padding-left: 25%;
+	flex-direction: row-reverse;
 }
 
-#actualites-principales .actu:nth-child(odd) .texte {
-	position: absolute;
-	width: 30%;
-	top: 0;
-	right: 44%;
-	padding-right: 2rem;
-	padding-left: 2px;
+#actualites-principales .texte {
+	flex: 1;
+	padding: 0 1rem;
+	padding-right: 5rem;
 }
 
-#actualites-principales .actu:nth-child(odd) figure {
-	position: absolute;
-	width: 44%;
-	right: 0;
-	top: 0;
-}
-#actualites-principales .actu:nth-child(odd) figcaption {
-	position: absolute;
-	bottom: 100%;
-	left: 100%;
-	transform: rotate(90deg);
-	transform-origin: 0px 100% 0px;
-	margin: 0px;
-	opacity: 0.5;
-	font-size: 0.7rem;
-	width: 66%;
-	overflow: hidden;
-	text-overflow: ellipsis;
+#actualites-principales figure {
+	margin: 0;
+	flex: 1.5;
+	position: relative;
 }
 
-#actualites-principales .actu:nth-child(even) .texte {
-	position: absolute;
-	width: 30%;
-	bottom: 0;
-	left: 44%;
-	padding-right: 2rem;
+#actualites-principales figure.embed {
+	padding-top: 33% !important;
 }
 
-#actualites-principales .actu:nth-child(even) figure {
-	position: absolute;
-	width: 44%;
-	left: 0;
-	bottom: 0;
-	padding-right: 2rem;
-}
-#actualites-principales .actu:nth-child(even) figcaption {
+#actualites-principales figcaption {
 	position: absolute;
 	bottom: 0px;
 	transform: rotate(-90deg);
@@ -341,9 +308,6 @@
 }
 
 @media screen and (max-width: 1450px) {
-	#actualites-principales {
-    padding-top: 50%;
-	}
 	#actualites-secondaires figure {
     width: 50%;
 	}
@@ -356,9 +320,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-	#actualites-principales {
-    padding-top: 56%;
-	}
 	#actualites-membres .event {
     width: 25%;
 	}
@@ -372,10 +333,10 @@
     padding: 0;
 		margin: 0;
 	}
-	#tdc-accroche, 
+	#tdc-accroche,
 	#reseaux,
-	#actualites-principales .actu, 
-	#actualites-principales .actu figure, 
+	#actualites-principales .actu,
+	#actualites-principales .actu figure,
 	#actualites-principales .actu .texte {
 		position: relative !important;
 	}
@@ -386,24 +347,7 @@
 		margin-bottom: 2rem;
 		left: 0;
 	}
-	#actualites-principales .actu {
-		margin-bottom: 2rem;
-	}
-	#actualites-principales .actu:nth-child(odd) figure,
-	#actualites-principales .actu:nth-child(even) figure {
-		float: left;
-    padding-right: 2rem;
-    width: 50%;
-	}
-	#actualites-principales .actu:nth-child(odd) .texte,
-	#actualites-principales .actu:nth-child(even) .texte {
-		width: 50%;
-    padding: 0;
-    float: left;
-    left: 0;
-	}
-	#actualites-principales .actu:nth-child(even) figcaption,
-	#actualites-principales .actu:nth-child(even) figcaption {
+	#actualites-principales .actu figcaption {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -416,12 +360,20 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+
+	#actualites-principales .actu:nth-child(odd) {
+		padding-right: 0%;
+	}
+
+	#actualites-principales .actu:nth-child(even) {
+		padding-left: 0%;
+	}
 	#reseaux {
 		height: 10rem;
     margin: auto;
     margin-bottom: 2rem;
 	}
-	
+
 	#actualites-secondaires figure {
     width: 100%;
 		margin-bottom: 1rem;
@@ -435,24 +387,29 @@
 	.actu h3 {
     margin-bottom: 0rem;
 	}
-	
+
 	#tdc-accroche {
 		width: 100%;
     margin: 0;
 		margin-bottom: 2rem;
 		padding: 0;
 	}
-	#actualites-principales .actu:nth-child(odd) figure,
-	#actualites-principales .actu:nth-child(even) figure {
+
+	#actualites-principales .actu {
+		flex-direction: column !important;
+	}
+
+	#actualites-principales .actu figure {
     width: 100%;
 		padding: 0;
 		margin-bottom: 1rem;
 	}
-	#actualites-principales .actu:nth-child(odd) .texte,
-	#actualites-principales .actu:nth-child(even) .texte {
+
+	#actualites-principales .actu .texte {
 		width: 100%;
+		padding: 0;
 	}
-	
+
 	#actualites-secondaires {
 		margin: 0;
 	}
@@ -464,7 +421,7 @@
 	#actualites-secondaires figure {
 		padding: 0;
 	}
-	
+
 	#actualites-membres .event {
     width: 50%;
 	}

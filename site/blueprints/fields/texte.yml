@@ -1,6 +1,6 @@
 label: Texte
 type: wysiwyg
 buttons:
-	- italic
-	- anchor
+  - italic
+  - anchor
 help: Caractères maximum = 250

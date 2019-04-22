@@ -1,10 +1,5 @@
 <?php
-$membresArray = $event->membre()->split();
-$membres	= '';
-foreach($membresArray as $membre):
-	$membres[] = page('membres/les-membres/'.$membre)->title();
-endforeach;
-$membres = implode($membres, ", ");
+$membres = membres($event->membre());
 ?>
 <div class="event color-<?= f::safeName($event->type()) ?> cf">
 	<div class="event-dates">

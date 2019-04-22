@@ -32,7 +32,7 @@
 <br>
 <p>
 	<b>Insérer une vidéo :</b><br>
-	(oembed: http://vimeo.com/3432886)<br>
+	(embed: http://vimeo.com/3432886)<br>
 </p>
 <br>
 <p>

@@ -1,18 +1,18 @@
 .app {
-	
+
 }
 a,
-.app, 
-input, 
-.input, 
+.app,
+input,
+.input,
 button,
 .selectbox,
-.search-section li.active a, 
+.search-section li.active a,
 .search-section li:hover a,
 .hgroup-options a:hover {
   color: #001abb;
 }
-.languages, 
+.languages,
 .topbar,
 .nav-icon,
 .breadcrumb,
@@ -20,7 +20,7 @@ button,
     background: #001abb;
 }
 .search-input.tag,
-.tag-label:focus, 
+.tag-label:focus,
 .tag-is-focused .tag-label {
 	background: #FF8484 !important;
 }
@@ -61,12 +61,12 @@ button,
 .breadcrumb-link:after, .breadcrumb-link:before {
 	background: #fff;
 }
-body.ltr .nav-icon-left, 
+body.ltr .nav-icon-left,
 body.rtl .nav-icon-right {
     border-right: 1px solid #fff;
 }
 body.ltr .languages,
-body.ltr .nav-icon-right, 
+body.ltr .nav-icon-right,
 body.rtl .nav-icon-left {
     border-left: 1px solid #fff;
 }
@@ -89,7 +89,7 @@ body.rtl .nav-icon-left {
   border: 2px solid #001abb;
 	background-color: #fff;
 }
-.btn-rounded:focus, 
+.btn-rounded:focus,
 .btn-rounded:hover {
    background: #001abb;
 }
@@ -124,20 +124,20 @@ body.rtl .nav-icon-left {
     color: #7D7DFF;
 }
 
-.selector-item-selected, 
+.selector-item-selected,
 .selector-item-selected a,
 .search-results {
   background: #FF8484;
 }
 
-.label-option, 
+.label-option,
 .btn-with-icon {
 	color: #7D7DFF;
 }
-.label-option .icon, 
+.label-option .icon,
 .label-option:hover,
-.btn-with-icon .icon, 
-.btn-with-icon:focus, 
+.btn-with-icon .icon,
+.btn-with-icon:focus,
 .btn-with-icon:hover {
 	color: #001abb;
 }
@@ -200,3 +200,18 @@ body.ltr .field-icon {
     border-top: 5px solid #FF8484;
 	}
 }
+
+/* ------------ Builder Modubes */
+.flexibleContainerCell{padding-top:20px; padding-right:20px; padding-left:20px;}
+.flexibleImage{height:auto;}
+.imageContent, .imageContentLast{padding-bottom:20px;}
+.nestedContainerCell{padding-top:20px; padding-right:20px; padding-left:20px;}
+.textContent, .textContentLast{text-align:Left; padding-bottom:20px;}
+.builder-entries h1 {font-size: 30px; text-align: center;}
+.builder-entries h2 {font-size:30px; text-align: center;}
+.builder-entries h3 {font-size:16px;}
+.builder-entries h4 {font-size:24px;}
+.builder-entries h5 {font-size:16px;}
+.builder-entries h6 {font-size:16px;}
+.builder-entries p{font-size:16px; margin: .8em 0;}
+.builder-entries a{border: 0;}

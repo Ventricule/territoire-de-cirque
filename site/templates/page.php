@@ -2,10 +2,10 @@
 <?php snippet('menus/menu') ?>
 
 	<div id="left-side">
-		<?php snippet('menus/siblings') ?>
+		<?php snippet('menus/menu-second') ?>
 	</div>
 
-  <main class="main" role="main">
+  <main id="panel" class="main cf" role="main">
 		<div class="text-wrapper">
 			<?= $page->text()->kt() ?>
 		</div>

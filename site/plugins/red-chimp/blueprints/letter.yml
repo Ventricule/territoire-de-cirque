@@ -1,0 +1,121 @@
+title:
+  en:                       Newsletter
+  fr:                       Lettre
+pages:                      false
+files:
+  type:                     image
+
+options:
+  preview: true
+  status: false
+  template: false
+  url: false
+  delete: true
+
+fields:
+
+  title:
+    label:
+      en:                   Title
+      fr:                   Titre
+    type:                   text
+
+  builder:
+    label:
+      en:                   Modules
+      fr:                   Modules
+    type:                   builder
+
+    fieldsets:
+
+      # -----
+      separateur:
+        label:              Separateur
+        snippet:            builder/separateur
+        fields:
+          line:
+            type:           line
+
+      # -----
+      rubrique:
+        label:              Rubrique
+        snippet:            builder/rubrique
+        fields:
+          text:
+            label:          Titre de la rubrique
+            type:           text
+
+      # -----
+      introduction:
+        label:              Introduction
+        snippet:            builder/introduction
+        fields:
+          title:
+            label:          Titre
+            type:           text
+          text:
+            label:          Texte
+            type:           textarea
+
+      # -----
+      image:
+        label:              Image
+        snippet:            builder/image
+        fields:
+          img:
+            label:          Image
+            type:           image
+          caption:
+            label:          Legende / Credit
+            type:           text
+
+      # -----
+      article:
+        label:              Article
+        snippet:            builder/article
+        fields:
+          img:
+            label:          Image
+            type:           image
+            width:          1/2
+          float:
+            label:          Alignement
+            type:           select
+            default:        floatRight
+            width:          1/2
+            options:
+              floatLeft:    Gauche
+              floatRight:   Droite
+          subtitle:
+            label:          Surtitre
+            type:           text
+          title:
+            label:          Titre
+            type:           text
+          text:
+            label:          Texte
+            type:           textarea
+          link_text:
+            label:          Texte du lien
+            type:           text
+            placeholder:    Lire la suite
+            icon:           font
+            width:          1/2
+          link_url:
+            label:          URL du lien
+            type:           url
+            width:          1/2
+
+      # -----
+      agenda:
+        label:              Agenda
+        snippet:            builder/agenda
+        fields:
+          from:
+            label:          Depuis
+            type:           date
+            width:          1/2
+          to:
+            label:          Jusqu'au
+            type:           date
+            width:          1/2

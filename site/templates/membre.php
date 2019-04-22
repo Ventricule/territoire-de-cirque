@@ -2,14 +2,15 @@
 <?php snippet('menus/menu') ?>
 <?php
 	$logo = $page->file($page->logo());
-	$wide = $logo->ratio() > 1.2 ? 'wide-logo' : '' ;
+	//$wide = $logo->ratio() > 1.2 ? 'wide-logo' : '' ;
+	$wide = 'wide-logo' ;
 ?>
 
 	<div id="left-side">
-			<?php snippet('menus/siblings', array('page' => $page)) ?>
+			<?php snippet('menus/menu-second', array('page' => $page)) ?>
 	</div>
 
-  <main class="main" role="main">	
+  <main id="panel" class="main cf" role="main">	
 		<div class="cartouche <?= $wide ?> cf">
 			<div class="row"><div class="cell"><h1><?= $page->title() ?></h1></div></div>
 			<div class="row trame50"><div class="cell"><h3><?= $page->complement() ?></h3></div></div>
@@ -64,6 +65,14 @@
 		
 		<div class="text-wrapper">
 			<?= $page->presentation()->kt() ?>
+		</div>
+		
+		<div class="forme ligne"></div>
+		
+		<div id="actualites-membre">
+			<?php $ds    = DS == '/' ? ':' : ';'; $membre = page('membres/les-membres/'.$page->uid())->uid() ; ?>
+			<?php snippet('modules/actualites-membre', array('membre' => $membre )) ?>
+			<h4><a class="lien-actus" href="<?= page('membres/actualites-des-membres')->url(). '/membre' . $ds . $membre ?>">Voir toutes les actualités du membre</a></h4>
 		</div>
 		
 		

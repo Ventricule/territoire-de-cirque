@@ -1,13 +1,18 @@
 title: Actualités
-pages: 
+pages:
 	template: actualite
-	num: date
+	num:
+		mode: date
+		field: start_date
+options:
+	preview: true
+	url: false
+	template: false
+	delete: false
+	status: false
 files: false
-fields: 
+fields:
 	title:
 		label: Titre
 		type: text
-	exergue:
-		label: Exergue
-		type: textarea
-		buttons: false
+		readonly: true

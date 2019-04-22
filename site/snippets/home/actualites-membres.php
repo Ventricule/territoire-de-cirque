@@ -1,5 +1,5 @@
 <div id='actualites-membres' class="cf">
-	
+
 	<div class="background"></div>
 
 	<div class="event chapitre">
@@ -14,6 +14,12 @@
 						->sortBy('start_date')
 						->limit(8);
 	foreach($events as $event) :
+
+		if($event->membre()):
+			$membre = page('membres/les-membres/'.$event->membre()) ? page('membres/les-membres/'.$event->membre())->title() : '' ;
+		else :
+			$membre = '';
+		endif;
 	?>
 
 	<div class="event">
@@ -21,7 +27,7 @@
 			<?= $event->date('%d.%m', 'start_date') ?>
 			<?php if($enddate = $event->date('%d.%m', 'end_date')) echo ' — ' . $enddate ; ?>
 		</h2>
-		<h4 class="event-membre"><?= page('membres/les-membres/'.$event->membre())->title() ?></h4>
+		<h4 class="event-membre"><?= $membre ?></h4>
 		<h4 class="event-type"><?= $event->type() ?></h4>
 		<p class="event-title"><a href="<?= $event->url() ?>"><?= $event->title() ?></a></p>
 		<p class="event-subtitle"><?= $event->subtitle() ?></p>

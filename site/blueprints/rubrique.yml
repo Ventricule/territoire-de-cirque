@@ -1,5 +1,7 @@
 title: Rubrique
-pages: page
+pages: 
+	template: 
+		- page
 files: false
 fields:
   title:

@@ -1,4 +1,9 @@
 <?php if( $page->depth() > 1) : ?>
+<div id="logo-tdc" class="second">
+	<a href="<?= $site->url() ?>">
+		<img class="logo-anime" src="<?= $site->url() ?>/assets/images/logo-anime.gif">
+	</a>
+</div>
 <div id="menu-second" class="h3">
 	<ul>
 			<?php if( $page->depth() > 2) : ?>

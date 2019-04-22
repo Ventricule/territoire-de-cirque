@@ -1,100 +1,119 @@
 title: Membre
 pages: false
-files: 
+files:
   sortable: true
-	fields:
-		caption:
-			label: Légende
-			type: textarea
-fields: 
-	h1:
-		label: Présentation
-		type: tabs
-	title:
-		label: Nom de la structure
-		type: text
-	complement:
-		label: Complément du nom
-		type: text
-	logo:
-		label: Logo
-		type: image
-		width: 1/2
-	date_creation:
-		label: Année de naissance
-		type: text
-		width: 1/4
-	date_tdc:
-		label: Membre depuis l'année
-		type: text
-		width: 1/4
-	activites: 
-		label: Activités
-		type: checkboxes
-		columns: 3
-		options:
-			diffusion: Lieu de diffusion
-			residence: Lieu de résidence
-			chapiteau: Espace chapiteau
-			polenationnal: Pôle nationnal
-			festival: Festival
-			formation: Formation professionnelle
-	presentation: 
+  fields:
+    caption:
+      label: Légende
+      type: textarea
+options:
+  preview: false
+  url: false
+  template: false
+  delete: false
+  status: true
+fields:
+  info0:
+    label: Informations
+    type: info
+    text: >
+      Format des images: jpg, gif ou png. Pas de tif.<br><br>
+      Pour mettre en forme le texte de présentation sélectionnez le texte à modifier et cliquez sur les boutons qui apparaissent pour mettre en gras, en italique ou pour ajouter un lien hypertexte.<br>
+      Format : 4000 caractères maximum
+  h1:
+    label: Présentation
+    type: headline
+  title:
+    label: Nom de la structure
+    type: text
+  complement:
+    label: Complément du nom
+    type: text
+  logo:
+    label: Logo
+    type: image
+    width: 1/2
+  date_creation:
+    label: Naissance
+    placeholder: AAAA
+    type: text
+    width: 1/4
+  date_tdc:
+    label: Membre depuis
+    placeholder: AAAA
+    type: text
+    width: 1/4
+  activites:
+    label: Activités
+    type: checkboxes
+    columns: 3
+    options:
+      diffusion: Lieu de diffusion
+      residence: Lieu de résidence
+      chapiteau: Espace chapiteau
+      polenationnal: Pôle national
+      festival: Festival
+      formation: Formation professionnelle
+  presentation:
     label: Texte de présentation
+    type: wysiwyg
+    buttons:
+      - bold
+      - italic
+      - anchor
+  h2:
+    label: Contact
+    type: headline
+  contacts:
+    label: Contacts
+    type: structure
+    style: table
+    fields:
+      nom:
+        label: Nom
+        type: text
+      qualite:
+        label: Qualité
+        type: text
+      email:
+        label: Email
+        type: email
+      numero:
+        label: Numéro de téléphone
+        type: tel
+  website:
+    label: Site internet
+    type: url
+    width: 1/2
+  facebook:
+    label: Facebook
+    type: url
+    width: 1/2
+  h3:
+    label: Géographie
+    type: headline
+  location:
+    label: Localisation
+    type: geolocation
+  ville:
+    label: Ville
+    type: text
+    width: 2/3
+  departement:
+    label: Numéro du département
+    type: text
+    width: 1/3
+  adresse:
+    label: Adresse
     type: textarea
-	h2:
-		label: Contact
-		type: tabs
-	contacts:
-		label: Contacts
-		type: structure
-		style: table
-		fields:
-			nom:
-				label: Nom
-				type: text
-			qualite:
-				label: Qualité
-				type: text
-			email:
-				label: Email
-				type: email
-			numero:
-				label: Numéro de téléphone
-				type: tel
-	website:
-		label: Site internet
-		type: url
-		width: 1/2
-	facebook:
-		label: Facebook
-		type: url
-		width: 1/2
-	h3:
-		label: Géographie
-		type: tabs
-	location:
-		label: Localisation
-		type: geolocation
-	ville:
-		label: Ville
-		type: text
-		width: 2/3
-	departement:
-		label: Numéro du département
-		type: text
-		width: 1/3
-	adresse:
-		label: Adresse
-		type: textarea
-		buttons: false
-	h4:
-		label: Belles images
-		type: tabs
-	gallery:
-		label: Galerie
-		type: selector
-		mode: multiple
-		sort: sort
-		types:
-			- image
+    buttons: false
+  h4:
+    label: Belles images
+    type: headline
+  gallery:
+    label: Galerie
+    type: selector
+    mode: multiple
+    sort: sort
+    types:
+      - image

@@ -34,15 +34,17 @@ return function($site, $pages, $page) {
 		);
 	endif;
 	
+	$results = $results->visible()->sortBy('date', 'desc');
+	
 	$results = $tag 		? $results->filterBy('tags', '*=', $tag) 				: $results ;
 	
 	$results = $author 	? $results->filterBy('author', '*=', $author) 	: $results;
 	
-	$results = $member	? $results->filterBy('member', '*=', $member)		: $results;
+	$results = $member	? $results->filterBy('membre', '*=', $member)		: $results;
 	
 	if ( $year ) :
 		$results = $results->filter(function($child) use(&$year){
-			return $child->date('Y') == $year;
+			return $child->date('%Y') == $year;
 		});
 	endif;
 	

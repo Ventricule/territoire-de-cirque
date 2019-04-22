@@ -1,17 +1,14 @@
 <?php snippet('header') ?>
 <?php snippet('menus/menu') ?>
 
-	<div id="left-side">
-		<?php snippet('menus/siblings') ?>
-	</div>
+	<main id="panel" class="main superwide cf" role="main">
 
-	<main class="main" role="main">
+		<?= snippet("home/actualites-principales", array('page' => $page)) ?>
 
-		<?= $page->text()->kt() ?>
+		<?= snippet("home/actualites-secondaires", array('page' => $page)) ?>
+
+		<?= snippet("home/actualites-membres", array('page' => $page)) ?>
+
 	</main>
-
-	<div id="right-side">
-		<?php snippet('modules/gallery') ?>
-	</div>
 
 <?php snippet('footer') ?>

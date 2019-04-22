@@ -1,27 +1,27 @@
 <?php
 
 return function($site, $pages, $page) {
-	
+
 	if($site->user() && get('logout')) {
-		$site->user()->logout(); 
+		$site->user()->logout();
 		go('/');
 		return true;
 	}
 
   // don't show the login screen to already logged in users
-  if($site->user()) go('/');
+  if($site->user()) go('/espace-membre');
 
   // handle the form submission
   if(r::is('post') and get('login')) {
 
-    // fetch the user by username and run the 
+    // fetch the user by username and run the
     // login method with the password
     if($user = $site->user(get('username')) and $user->login(get('password'))) {
-      // redirect to the homepage 
+      // redirect to the homepage
       // if the login was successful
-      go('/');
+      go('/espace-membre');
     } else {
-      // make sure the alert is being 
+      // make sure the alert is being
       // displayed in the template
       $error = true;
     }
@@ -29,7 +29,7 @@ return function($site, $pages, $page) {
   } else {
     // nothing has been submitted
     // nothing has gone wrong
-    $error = false;  
+    $error = false;
   }
 
   return array('error' => $error);

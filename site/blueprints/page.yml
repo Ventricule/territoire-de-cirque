@@ -1,9 +1,11 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Page
 pages: false
-files: 
-  sortable: true
+files:
+	sortable: true
+	fields:
+		caption:
+			label: Légende
+			type: textarea
 fields:
 	title:
 		label: Titre
@@ -14,7 +16,7 @@ fields:
 		buttons: false
 	text:
 		label: Texte
-		type:  textarea
+		type:  wysiwyg
 	gallery:
 		label: Galerie
 		type: selector

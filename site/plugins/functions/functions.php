@@ -1,6 +1,6 @@
 <?php
 function id2title($id) {
-	$id = str_replace('activite-', '', $id); 
+	$id = str_replace('activite-', '', $id);
 	switch ($id) {
 		case 'diffusion':
 			return 'Lieu de diffusion';
@@ -39,7 +39,7 @@ function subpages($uri, $options = array()) {
 
   // merge defaults and options
   $options = array_merge($defaults, $options);
-	
+
 	$folder = page($uri);
 	$subpages = array();
 	$subpages[] = array(
@@ -53,7 +53,7 @@ function subpages($uri, $options = array()) {
 		'parent' => 'parent',
 		'visibility' => $folder->isVisible() ? 'visible' : 'invisible'
 	);
-	
+
 	// Pages à restriction d'accès
 	if (in_array($folder->uid(), array('actualites-des-membres'))) {
 		if ( $user = $options['user']) {
@@ -67,6 +67,9 @@ function subpages($uri, $options = array()) {
 		}
 	} else {
 		$items = $folder->children();
+		if ( $user = $options['user']) {
+			$items = $folder->children()->filterBy('membre', 'in', ['', $user]);
+		}
 	}
 	$items = $items->sortBy('start_date', 'desc');
 	// Lister les sous-pages
@@ -87,11 +90,11 @@ function subpages($uri, $options = array()) {
 }
 
 function createPage($uri, $template, $data) {
-	
+
 	if ($uid = $data['title']):
-		
+
 		$uid = f::safeName($uid);
-	
+
 		if( page($uri.'/'.$uid) ):
 			$newname = $uid;
 			$counter = 2;
@@ -101,7 +104,7 @@ function createPage($uri, $template, $data) {
 			}
 			$uid = $newname;
 		endif;
-		
+
 		try {
 
 			$newPage = page($uri)->children()->create($uid, $template, $data);
@@ -112,7 +115,72 @@ function createPage($uri, $template, $data) {
 			return array('error' => $e->getMessage());
 
 		}
-	
+
 	endif;
 
+}
+
+function membres($membres){
+	$membresArray = $membres->split();
+	$membres = array();
+	foreach($membresArray as $membre):
+		if ($pagemembre = page('membres/les-membres/'.$membre)):
+			$membres[] = $pagemembre->title();
+		else:
+			$membres[] = $membre;
+		endif;
+	endforeach;
+	return $membres = implode($membres, ", ");
+}
+
+function resetPassword($email,$firstTime = false) {
+  // Find the user
+  $user = site()->users()->findBy('email',$email);
+  if (!$user) return false;
+  // Generate a secure random 32-character hex token
+  do {
+    $bytes = openssl_random_pseudo_bytes(16, $crypto_strong);
+    $token = bin2hex($bytes);
+  } while(!$crypto_strong);
+  // Add the token to the user's profile
+  $user->update([
+    'token' => $token,
+  ]);
+  // Set the reset link
+  $resetLink = url('token/'.$token);
+  // Build the email text
+  if ($firstTime) {
+    $subject = 'Activez votre compte';
+    $body = 'Votre e-mail est enregistré sur '.str_replace('www.', '', $_SERVER['HTTP_HOST']).'. Accédez au lien ci-dessous afin d’activer votre compte \n\n'.$resetLink.'\n\n Si vous n’avez pas créé ce compte, aucune action n’est requise. Le compte restera inactivé.';
+  } else {
+    $subject = 'Réinitialisez votre mot de passe';
+    $body = 'Quelqu’un a demandé un nouveau mot de passe pour votre compte sur '.str_replace('www.', '', $_SERVER['HTTP_HOST']).'. Accédez au lien ci-dessous afin de réinitialiser votre mot de passe. \n\n'.$resetLink.'\n\n Si vous n’avez pas effectué cette action, aucune action n’est requise.';
+  }
+  // Send the confirmation email
+  return sendMail($subject, $body, $user->email());
+}
+
+function sendMail($subject, $body, $to) {
+  // Define from email address
+  $from = 'noreply@'.str_replace('www.', '', server::get('server_name'));
+
+  // Build email
+  $email = new Email([
+    'subject' => $subject,
+    'body'    => $body,
+    'to'      => $to,
+    'from'    => $from,
+  ]);
+  // Log email
+  if (c::get('mail.log') == true) {
+    $file = kirby()->roots()->index().DS.'logs'.DS.'mail.log';
+    $content = "\n\n----\n\n".date('Y-m-d H:i:s')."\n\n".yaml::encode($email);
+    f::write($file, $content, true);
+  }
+  // Vaidate and send
+  if (v::email($to) and v::email($from) and $email->send()) {
+    return true;
+  } else {
+    return false;
+  }
 }

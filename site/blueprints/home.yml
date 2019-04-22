@@ -1,8 +1,49 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Home
+icon: home
 pages: false
+files:
+  sortable: true
+  fields:
+    caption:
+      label: Légende
+      type: textarea
 fields:
   title:
     label: Title
     type:  text
+
+  actu-1:
+    label: Actualités Principales
+    type: headline
+
+  actualites_principales:
+    label: Actualités Principales
+    type: structure
+    width: 1/2
+    modalsize: large
+    entry: >
+      {{rubrique}}<br>
+      {{texte}}
+    fields:
+      texte: texte
+      rubrique: rubrique
+      image: image
+      video: video
+      forme: forme
+
+  actualites_secondaires:
+    label: Actualités Secondaires
+    type: structure
+    width: 1/2
+    modalsize: large
+    entry: >
+      {{rubrique}}
+      <p style='font-size:12px;line-height:120%;'>{{texte}}</p>
+    fields:
+      texte:
+        extends: texte
+        help: Caractères maximum = 125
+      rubrique: rubrique
+      image: image
+      video: video
+      forme: forme
